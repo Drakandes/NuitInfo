@@ -1,0 +1,12 @@
+.nav-header-box{
+    background-color: #ff80ab;
+    width: 100%;
+    height: auto;
+}
+
+.nav-header-title{
+    margin-left: 150px;
+    height: 65px;
+    color:white;
+    font-size: 16pt;
+}

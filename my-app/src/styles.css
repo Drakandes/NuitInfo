@@ -1,1 +1,144 @@
 /* You can add global styles to this file, and also import other style files */
+
+.testR{
+border: 2px solid red; 
+}
+
+.testB{
+border: 2px solid black; 
+}
+
+.testG{
+    border: 2px solid green;
+}
+
+.flexbox-row-start{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.flexbox-row-end{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.flexbox-row-spc-evenly{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: 100%;
+}
+
+.flexbox-row-spc-between{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 100%;
+}
+
+.flexbox-row-center{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.flexbox-column-center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.flexbox-column-spc-between{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+
+.flexbox-column-start{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100%;
+}
+
+.flexbox-column-end{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100%;
+}
+
+.flexbox-column-spc-evenly{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100%;
+}
+
+.center-item{
+    align-items: center;
+    justify-content: center;
+}
+
+.center-vertically{
+    align-items: center;
+}
+
+.center-horizontally{
+    justify-content: center;
+}
+
+.center-icon{
+align-items: center;
+display: flex;
+    justify-content: center;
+}
+
+.wrap-over{
+    flex-wrap: wrap;
+}
+
+.first-item-nogrow{
+flex-grow: 0;
+    justify-content: flex-start;
+display: flex;
+    align-content: flex-start
+}
+
+.first-item{
+flex-grow: 1;
+    justify-content: flex-start;
+display: flex;
+    align-content: flex-start
+}
+
+.middle-item{
+flex-grow: 1;
+justify-content: center;
+display: flex;
+align-content: center;
+}
+
+.middle-item-nogrow{
+flex-grow: 0;
+justify-content: center;
+display: flex;
+align-content: center;
+}
+
+.last-item{
+    display: flex;
+flex-grow: 1;
+    justify-content: flex-end;
+    align-content: flex-end
+}
+
+.last-item-nogrow{
+    display: flex;
+flex-grow: 0;
+    justify-content: flex-end;
+    align-content: flex-end
+}
