@@ -11,20 +11,15 @@
 }
 
 .path-sections{
-    height: 50%;
     background-color: #eceff1;
 }
 
 .top-section{
     height: 100%;
     width: 100%;
-    border-color: #cfd8dc;
-    border-width: 2px;
-    border-style: solid;
 }
 
 .action-sections{
-    height: 50%;
     background-color:#eceff1;
 }
 
@@ -42,4 +37,19 @@
     background-color: #fce4ec;
     border: 4px solid #ff80ab;
     border-radius: 20px;
+    margin: 0 auto;
+}
+
+.mini-action-box{
+    width: 200px;
+    height: 55px;
+    background-color: #fce4ec;
+    border: 4px solid #ff80ab;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.text-path-option{
+    font-size: 24pt;
+    color: black;
 }

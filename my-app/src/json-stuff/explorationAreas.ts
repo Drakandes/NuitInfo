@@ -1,8 +1,8 @@
-
 const areaList = ["carverne", "montagne", "désert", "forêt", "plaine", "ruisseau", "marécage", "ville", "plaine étrange", "toundra"];
 const monsterList = ["ours", "fennec", "troll",, "piranha", "fantôme", "cactus", "zombie", "yéti"];
 const objectList = ["poêle", "roche", "hameçon", "poisson", "huile", "lampe", "pelle", "VIPI"];
 const actionList = ["dormir", "manger", "explorer", "fuir"];
+
 // Action
 const actionTextList = {
     quebecois : {
@@ -202,42 +202,81 @@ const locationInfo = {
     monsterList : ["ours","fennec","troll",],
     backgroundColor: "#795548",
     chanceModifier: 90,
+    healthMinus: 10,
+    sleepMinus: 5,
+    hungerMinus: 5,
   },
-  montagne : {monsterList : ["ours","fennec","troll","yéti"],
+  montagne : {
+    monsterList : ["ours","fennec","troll","yéti"],
     backgroundColor: "#9e9e9e",
     chanceModifier: 10,
+    healthMinus: 0,
+    sleepMinus: 20,
+    hungerMinus: 5,
   },
-  désert : {monsterList : ["fennec","cactus",],
+  désert : {
+    monsterList : ["fennec","cactus",],
     backgroundColor: "#fff9c4",
     chanceModifier: 80,
+    healthMinus: 0,
+    sleepMinus: 15,
+    hungerMinus: 15,
   },
-  forêt : {monsterList : ["ours","troll","zombie",],
+  forêt : {
+    monsterList : ["ours","troll","zombie",],
     backgroundColor: "#388e3c",
     chanceModifier: 100,
+    healthMinus: 10,
+    sleepMinus: 5,
+    hungerMinus: 0,
   },
-  plaine : {monsterList : ["fennec","zombie",],
-   backgroundColor: "#dce775",
-   chanceModifier: 95,
+  plaine : {
+  monsterList : ["fennec","zombie",],
+    backgroundColor: "#dce775",
+    chanceModifier: 95,
+    healthMinus: 5,
+    sleepMinus: 10,
+    hungerMinus: 5,
   },
-  ruisseau : {monsterList : ["ours","piranha","zombie",],
-   backgroundColor: "#80deea",
-   chanceModifier: 100,
+  ruisseau : {
+    monsterList : ["ours","piranha","zombie",],
+    backgroundColor: "#80deea",
+    chanceModifier: 100,
+    healthMinus: 0,
+    sleepMinus: 5,
+    hungerMinus: 0,
   },
-  marécage : {monsterList : ["fantôme","zombie",],
-   backgroundColor: "#00897b",
-   chanceModifier: 70,
+  marécage : {
+    monsterList : ["fantôme","zombie",],
+    backgroundColor: "#00897b",
+    chanceModifier: 70,
+    healthMinus: 5,
+    sleepMinus: 10,
+    hungerMinus: 0,
   },
-  ville : {monsterList : ["fantôme","zombie",],
+  ville : {
+    monsterList : ["fantôme","zombie",],
     backgroundColor: "#90a4ae",
     chanceModifier: 35,
+    healthMinus: 10,
+    sleepMinus: 5,
+    hungerMinus: 0,
   },
-  "plaine étrange" : {monsterList : [],
+  "plaine étrange" : {
+    monsterList : [],
     backgroundColor: "#f48fb1",
     chanceModifier: 5,
+    healthMinus: 0,
+    sleepMinus: 0,
+    hungerMinus: 0,
   },
-  toundra : {monsterList : ["ours","troll","yéti"],
+  toundra : {
+    monsterList : ["ours","troll","yéti"],
     backgroundColor: "#c5cae9",
     chanceModifier: 50,
+    healthMinus: 5,
+    sleepMinus: 15,
+    hungerMinus: 10,
   },
 }
 

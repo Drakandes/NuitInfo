@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import  explorationDataObject from '../json-stuff/explorationAreas'
+import { PlayerStatService } from './player-stat.service'
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,7 @@ export class PathExplorationService {
   public pathOptions = []
   public pathOptionsInfo = []
 
-  constructor() { }
+  constructor(private stat: PlayerStatService) { }
 
   public initExplorationService(){
     this.updatePathOptions()
@@ -21,6 +22,7 @@ export class PathExplorationService {
   public updatePathOptions(){
     const locationPool1 = []
     this.pathOptions = []
+    this.pathOptionsInfo = []
 
     Object.keys(this.explorationData.locationInfo).forEach((key, index) => {
       for (let index = 0; index < this.explorationData.locationInfo[key].chanceModifier; index++) {
@@ -47,5 +49,13 @@ export class PathExplorationService {
     })
     const pathOption3 = locationPool3[Math.floor(Math.random()*locationPool3.length)];
     this.pathOptions.push(pathOption3)
+
+    this.pathOptions.forEach(pathOption => {
+      this.pathOptionsInfo.push(this.explorationData.locationInfo[pathOption])
+    });
+  }
+
+  public explorePathOption(pathOptionIndex) {
+    
   }
 }

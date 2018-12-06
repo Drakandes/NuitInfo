@@ -1,53 +1,39 @@
 <app-nav-header></app-nav-header>
 
-<div class="col s12 home-page-box">
+<div class="col s12 home-page-box flexbox-column-spc-evenly">
   <app-gauge></app-gauge>
   <!-- Section du haut -->
-  <div class="col s12 path-sections valign-wrapper">
-    <div class="col s4 first-item top-section valign-wrapper">
-      <div class="middle-item center-item">
-        
+  <div class="middle-item path-sections flexbox-row-spc-evenly">
+    <div class="top-section flexbox-column-spc-evenly" [style.background-color]="getPathOptionColor(0)">
+      <div class="middle-item-nogrow text-path-option">
+        {{path.pathOptions[0][0].toUpperCase() + path.pathOptions[0].slice(1)}}
+      </div>
+      <div class="middle-item-nogrow mini-action-box center-vertically" (click)="path.explorePathOption(0)"> 
+        {{stat.language === 'français' ? "S'y aventurer" : "Aweille là, let's go!" }}
       </div>
     </div>
-    <div class="col s4 middle-item top-section valign-wrapper">
-      <div class="middle-item center-item">
-        
+    <div class="top-section flexbox-column-spc-evenly" [style.background-color]="getPathOptionColor(1)">
+      <div class="middle-item-nogrow text-path-option">
+          {{path.pathOptions[1][0].toUpperCase() + path.pathOptions[1].slice(1)}}
+      </div>
+      <div class="middle-item-nogrow mini-action-box center-vertically" (click)="path.explorePathOption(1)">
+        {{stat.language === 'français' ? "S'y aventurer" : "Aweille là, let's go!" }}
       </div>
     </div>
-    <div class="col s4 last-item top-section valign-wrapper">
-      <div class="middle-item center-item">
-        
+    <div class="top-section flexbox-column-spc-evenly" [style.background-color]="getPathOptionColor(2)">
+      <div class="middle-item-nogrow text-path-option">
+          {{path.pathOptions[2][0].toUpperCase() + path.pathOptions[2].slice(1)}}
+      </div>
+      <div class="middle-item-nogrow mini-action-box center-vertically" (click)="path.explorePathOption(2)">
+        {{stat.language === 'français' ? "S'y aventurer" : "Aweille là, let's go!" }}
       </div>
     </div>
   </div>
   <!-- Section du bas -->
-  <div class="col s12 action-sections valign-wrapper">
-    <div class="col s3 first-item bottom-section valign-wrapper">
-      <div class="middle-item center-item">
-        <div class="action-box">
-          
-        </div>
-      </div>
-    </div>
-    <div class="col s3 middle-item bottom-section valign-wrapper">
-      <div class="middle-item center-item">
-        <div class="action-box">
-
-        </div>
-      </div>
-    </div>
-    <div class="col s3 last-item bottom-section testR valign-wrapper">
-      <div class="middle-item center-item">
-        <div class="action-box">
-
-          </div>
-      </div>
-    </div>
-    <div class="col s3 first-item bottom-section valign-wrapper">
-      <div class="middle-item center-item">
-        <div class="action-box">
-          
-        </div>
+  <div class="middle-item action-sections flexbox-row-spc-evenly">
+    <div class="center-item bottom-section flexbox-row-spc-evenly" *ngFor="let action of path.explorationData.actionList; let actionIndex = index">
+      <div class="action-box center-item flexbox-row-spc-evenly">
+        {{action[0].toUpperCase() + action.slice(1)}}
       </div>
     </div>
   </div>
