@@ -202,45 +202,331 @@ const locationInfo = {
     monsterList : ["ours","fennec","troll",],
     backgroundColor: "#795548",
     chanceModifier: 90,
+    quebecois : {
+      arrivee : {text : ""}
+    },
+    français : {
+      arrivee : {text : ""}
+    }
   },
   montagne : {monsterList : ["ours","fennec","troll","yéti"],
     backgroundColor: "#9e9e9e",
     chanceModifier: 10,
+    quebecois : {
+      arrivee : {text : ""}
+    },
+    français : {
+      arrivee : {text : ""}
+    }
   },
   désert : {monsterList : ["fennec","cactus",],
     backgroundColor: "#fff9c4",
     chanceModifier: 80,
+    quebecois : {
+      arrivee : {text : ""}
+    },
+    français : {
+      arrivee : {text : ""}
+    }
   },
   forêt : {monsterList : ["ours","troll","zombie",],
     backgroundColor: "#388e3c",
     chanceModifier: 100,
+    quebecois : {
+      arrivee : {text : ""}
+    },
+    français : {
+      arrivee : {text : ""}
+    }
   },
   plaine : {monsterList : ["fennec","zombie",],
    backgroundColor: "#dce775",
    chanceModifier: 95,
+   quebecois : {
+    arrivee : {text : ""}
+  },
+  français : {
+    arrivee : {text : ""}
+  }
   },
   ruisseau : {monsterList : ["ours","piranha","zombie",],
    backgroundColor: "#80deea",
    chanceModifier: 100,
+   quebecois : {
+    arrivee : {text : ""}
+  },
+  français : {
+    arrivee : {text : ""}
+  }
   },
   marécage : {monsterList : ["fantôme","zombie",],
    backgroundColor: "#00897b",
    chanceModifier: 70,
+   quebecois : {
+    arrivee : {text : ""}
+  },
+  français : {
+    arrivee : {text : ""}
+  }
   },
   ville : {monsterList : ["fantôme","zombie",],
     backgroundColor: "#90a4ae",
     chanceModifier: 35,
+    quebecois : {
+      arrivee : {text : ""}
+    },
+    français : {
+      arrivee : {text : ""}
+    }
   },
   "plaine étrange" : {monsterList : [],
     backgroundColor: "#f48fb1",
     chanceModifier: 5,
+    quebecois : {
+      arrivee : {text : ""}
+    },
+    français : {
+      arrivee : {text : ""}
+    }
   },
   toundra : {monsterList : ["ours","troll","yéti"],
     backgroundColor: "#c5cae9",
     chanceModifier: 50,
+    quebecois : {
+      arrivee : {text : ""}
+    },
+    français : {
+      arrivee : {text : ""}
+    }
   },
 }
 
+const objectInfo = {
+  poêle : {
+    quebecois : {
+      récupérer : {text : ""},
+      utiliser : {
+        ours : { text : ""}, 
+        fennec : { text : "" }, 
+        troll : { text : ""}, 
+        piranha : { text : ""} , 
+        fantôme : { text : ""}, 
+        cactus : { text : ""}, 
+        zombie : { text : ""}, 
+        yéti : { text : ""}
+      }
+    },
+    français : {
+      récupérer : {text : ""},
+      utiliser : {
+        ours : { text : ""}, 
+        fennec : { text : "" }, 
+        troll : { text : ""}, 
+        piranha : { text : ""} , 
+        fantôme : { text : ""}, 
+        cactus : { text : ""}, 
+        zombie : { text : ""}, 
+        yéti : { text : ""}
+      }
+    }
+  }, 
+  roche : {
+    quebecois : {
+      récupérer : {text : ""},
+      utiliser : {
+        ours : { text : ""}, 
+        fennec : { text : "" }, 
+        troll : { text : ""}, 
+        piranha : { text : ""} , 
+        fantôme : { text : ""}, 
+        cactus : { text : ""}, 
+        zombie : { text : ""}, 
+        yéti : { text : ""}
+      }
+    },
+    français : {
+      récupérer : {text : ""},
+      utiliser : {
+        ours : { text : ""}, 
+        fennec : { text : "" }, 
+        troll : { text : ""}, 
+        piranha : { text : ""} , 
+        fantôme : { text : ""}, 
+        cactus : { text : ""}, 
+        zombie : { text : ""}, 
+        yéti : { text : ""}
+      }
+    }
+  }, 
+  hameçon : {
+    quebecois : {
+      récupérer : {text : ""},
+      utiliser : {
+        ours : { text : ""}, 
+        fennec : { text : "" }, 
+        troll : { text : ""}, 
+        piranha : { text : ""} , 
+        fantôme : { text : ""}, 
+        cactus : { text : ""}, 
+        zombie : { text : ""}, 
+        yéti : { text : ""}
+      }
+    },
+    français : {
+      récupérer : {text : ""},
+      utiliser : {
+        ours : { text : ""}, 
+        fennec : { text : "" }, 
+        troll : { text : ""}, 
+        piranha : { text : ""} , 
+        fantôme : { text : ""}, 
+        cactus : { text : ""}, 
+        zombie : { text : ""}, 
+        yéti : { text : ""}
+      }
+    }
+  },
+  poisson : {
+    quebecois : {
+      récupérer : {text : ""},
+      utiliser : {
+        ours : { text : ""}, 
+        fennec : { text : "" }, 
+        troll : { text : ""}, 
+        piranha : { text : ""} , 
+        fantôme : { text : ""}, 
+        cactus : { text : ""}, 
+        zombie : { text : ""}, 
+        yéti : { text : ""}
+      }
+    },
+    français : {
+      récupérer : {text : ""},
+      utiliser : {
+        ours : { text : ""}, 
+        fennec : { text : "" }, 
+        troll : { text : ""}, 
+        piranha : { text : ""} , 
+        fantôme : { text : ""}, 
+        cactus : { text : ""}, 
+        zombie : { text : ""}, 
+        yéti : { text : ""}
+      }
+    }
+  }, huile : 
+  {
+    quebecois : {
+      récupérer : {text : ""},
+      utiliser : {
+        ours : { text : ""}, 
+        fennec : { text : "" }, 
+        troll : { text : ""}, 
+        piranha : { text : ""} , 
+        fantôme : { text : ""}, 
+        cactus : { text : ""}, 
+        zombie : { text : ""}, 
+        yéti : { text : ""}
+      }
+    },
+    français : {
+      récupérer : {text : ""},
+      utiliser : {
+        ours : { text : ""}, 
+        fennec : { text : "" }, 
+        troll : { text : ""}, 
+        piranha : { text : ""} , 
+        fantôme : { text : ""}, 
+        cactus : { text : ""}, 
+        zombie : { text : ""}, 
+        yéti : { text : ""}
+      }
+    }
+  }, lampe :
+  {
+    quebecois : {
+      récupérer : {text : ""},
+      utiliser : {
+        ours : { text : ""}, 
+        fennec : { text : "" }, 
+        troll : { text : ""}, 
+        piranha : { text : ""} , 
+        fantôme : { text : ""}, 
+        cactus : { text : ""}, 
+        zombie : { text : ""}, 
+        yéti : { text : ""}
+      }
+    },
+    français : {
+      récupérer : {text : ""},
+      utiliser : {
+        ours : { text : ""}, 
+        fennec : { text : "" }, 
+        troll : { text : ""}, 
+        piranha : { text : ""} , 
+        fantôme : { text : ""}, 
+        cactus : { text : ""}, 
+        zombie : { text : ""}, 
+        yéti : { text : ""}
+      }
+    }
+  }, pelle : 
+  {
+    quebecois : {
+      récupérer : {text : ""},
+      utiliser : {
+        ours : { text : ""}, 
+        fennec : { text : "" }, 
+        troll : { text : ""}, 
+        piranha : { text : ""} , 
+        fantôme : { text : ""}, 
+        cactus : { text : ""}, 
+        zombie : { text : ""}, 
+        yéti : { text : ""}
+      }
+    },
+    français : {
+      récupérer : {text : ""},
+      utiliser : {
+        ours : { text : ""}, 
+        fennec : { text : "" }, 
+        troll : { text : ""}, 
+        piranha : { text : ""} , 
+        fantôme : { text : ""}, 
+        cactus : { text : ""}, 
+        zombie : { text : ""}, 
+        yéti : { text : ""}
+      }
+    }
+  }, VIPI : 
+  {
+    quebecois : {
+      récupérer : {text : ""},
+      utiliser : {
+        ours : { text : ""}, 
+        fennec : { text : "" }, 
+        troll : { text : ""}, 
+        piranha : { text : ""} , 
+        fantôme : { text : ""}, 
+        cactus : { text : ""}, 
+        zombie : { text : ""}, 
+        yéti : { text : ""}
+      }
+    },
+    français : {
+      récupérer : {text : ""},
+      utiliser : {
+        ours : { text : ""}, 
+        fennec : { text : "" }, 
+        troll : { text : ""}, 
+        piranha : { text : ""} , 
+        fantôme : { text : ""}, 
+        cactus : { text : ""}, 
+        zombie : { text : ""}, 
+        yéti : { text : ""}
+      }
+    }
+  },
+}
 
 const monsterAtLocationList = {
   caverne : ["ours","fennec","troll",],
