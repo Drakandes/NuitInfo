@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { noUiSlider, wNumb } from 'node_modules/nouislider'
 
 import { NavHeaderComponent } from './nav-header.component';
 

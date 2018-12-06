@@ -2,3 +2,36 @@
     margin-top: 150px;
     font-size: 24pt;
 }
+
+.home-page-box{
+    position: fixed;
+    height: 100%;
+    background: black;
+    width: 100%;
+}
+
+.path-sections{
+    height: 50%;
+    background-color: #ffd180;
+}
+
+.top-section{
+    height: 100%;
+    width: 100%;
+    border-color: #ffab40;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.action-sections{
+    height: 50%;
+    background-color:#fbe9e7;
+}
+
+.bottom-section{
+    height: 100%;
+    width: 100%;
+    border-color: #ffccbc;
+    border-width: 2px;
+    border-style: solid;
+}

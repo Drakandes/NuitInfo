@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DarkModeService } from '../dark-mode.service'
 
 @Component({
   selector: 'app-nav-header',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavHeaderComponent implements OnInit {
 
-  constructor() { }
+  private darkmodeRange = 100
+
+  constructor(private darkmode: DarkModeService) { }
 
   ngOnInit() {
   }
