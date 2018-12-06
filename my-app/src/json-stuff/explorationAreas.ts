@@ -213,7 +213,7 @@ const locationInfo = {
     backgroundColor: "#9e9e9e",
     chanceModifier: 10,
     quebecois : {
-      arrivee : {text : ""}
+      arrivee : {text : "T'arrives à la montagne"}
     },
     français : {
       arrivee : {text : ""}
@@ -223,7 +223,7 @@ const locationInfo = {
     backgroundColor: "#fff9c4",
     chanceModifier: 80,
     quebecois : {
-      arrivee : {text : ""}
+      arrivee : {text : "T'arrives dans l'désert pis y fait chaud"}
     },
     français : {
       arrivee : {text : ""}
@@ -233,7 +233,7 @@ const locationInfo = {
     backgroundColor: "#388e3c",
     chanceModifier: 100,
     quebecois : {
-      arrivee : {text : ""}
+      arrivee : {text : "T'arrives en forêt"}
     },
     français : {
       arrivee : {text : ""}
@@ -243,7 +243,7 @@ const locationInfo = {
    backgroundColor: "#dce775",
    chanceModifier: 95,
    quebecois : {
-    arrivee : {text : ""}
+    arrivee : {text : "T'arrives dans la plaine"}
   },
   français : {
     arrivee : {text : ""}
@@ -253,7 +253,7 @@ const locationInfo = {
    backgroundColor: "#80deea",
    chanceModifier: 100,
    quebecois : {
-    arrivee : {text : ""}
+    arrivee : {text : "T'arrives au ruisseau"}
   },
   français : {
     arrivee : {text : ""}
@@ -263,7 +263,7 @@ const locationInfo = {
    backgroundColor: "#00897b",
    chanceModifier: 70,
    quebecois : {
-    arrivee : {text : ""}
+    arrivee : {text : "T'arrives au marécage, pis ça pue"}
   },
   français : {
     arrivee : {text : ""}
@@ -273,7 +273,7 @@ const locationInfo = {
     backgroundColor: "#90a4ae",
     chanceModifier: 35,
     quebecois : {
-      arrivee : {text : ""}
+      arrivee : {text : "T'arrives en ville"}
     },
     français : {
       arrivee : {text : ""}
@@ -283,7 +283,7 @@ const locationInfo = {
     backgroundColor: "#f48fb1",
     chanceModifier: 5,
     quebecois : {
-      arrivee : {text : ""}
+      arrivee : {text : "T'arrives dans une plaine ... étrange"}
     },
     français : {
       arrivee : {text : ""}
@@ -293,7 +293,7 @@ const locationInfo = {
     backgroundColor: "#c5cae9",
     chanceModifier: 50,
     quebecois : {
-      arrivee : {text : ""}
+      arrivee : {text : "T'arrives dans la toundra et y fait frette!"}
     },
     français : {
       arrivee : {text : ""}
@@ -304,16 +304,16 @@ const locationInfo = {
 const objectInfo = {
   poêle : {
     quebecois : {
-      récupérer : {text : ""},
+      récupérer : {text : "Tu récupères une poêle là"},
       utiliser : {
-        ours : { text : ""}, 
-        fennec : { text : "" }, 
-        troll : { text : ""}, 
-        piranha : { text : ""} , 
-        fantôme : { text : ""}, 
-        cactus : { text : ""}, 
-        zombie : { text : ""}, 
-        yéti : { text : ""}
+        ours : { text : "Tu garroches la poêle et tu pognes l'ours ben fort en pleine face"}, 
+        fennec : { text : "Tu garroches la poêle et tu pognes l'fennec ben fort en pleine face" }, 
+        troll : { text : "Tu garroches la poêle et tu pognes l'troll ben fort en pleine face"}, 
+        piranha : { text : "Tu garroches la poêle et plouf ton attaque tombe à l'eau"} , 
+        fantôme : { text : "Tu garroches la poêle et ... rien"}, 
+        cactus : { text : "Tu garroches la poêle et tu pognes l'cactus ben fort en pleine face"}, 
+        zombie : { text : "Tu garroches la poêle et tu pognes l'zombie ben fort en pleine face"}, 
+        yéti : { text : "Tu garroches la poêle et tu pognes l'yéti ben fort en pleine face"}
       }
     },
     français : {
@@ -332,16 +332,16 @@ const objectInfo = {
   }, 
   roche : {
     quebecois : {
-      récupérer : {text : ""},
+      récupérer : {text : "Tu pognes une roche"},
       utiliser : {
-        ours : { text : ""}, 
-        fennec : { text : "" }, 
-        troll : { text : ""}, 
-        piranha : { text : ""} , 
-        fantôme : { text : ""}, 
-        cactus : { text : ""}, 
-        zombie : { text : ""}, 
-        yéti : { text : ""}
+        ours : { text : "Tu garroches la roche et tu pognes l'ours ben fort en pleine face"}, 
+        fennec : { text : "Tu garroches la roche et tu pognes l'fennec ben fort en pleine face" }, 
+        troll : { text : "Tu garroches la roche et tu pognes l'troll ben fort en pleine face"}, 
+        piranha : { text : "Tu garroches la roche et plouf ton attaque tombe à l'eau"} , 
+        fantôme : { text : "Tu garroches la roche et ... rien"}, 
+        cactus : { text : "Tu garroches la roche et tu pognes l'cactus ben fort en pleine face"}, 
+        zombie : { text : "Tu garroches la roche et tu pognes l'zombie ben fort en pleine face"}, 
+        yéti : { text : "Tu garroches la roche et tu pognes l'yéti ben fort en pleine face"}
       }
     },
     français : {
