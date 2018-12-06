@@ -114,27 +114,89 @@ const monsterTextList = {
       attaque : {text : ""},
       fuite : {text : ""},
       suivi : {text : ""}
-
     }, fennec : {
-
+      arrivee : {text : ""},
+      attaque : {text : ""},
+      fuite : {text : ""},
+      suivi : {text : ""}
     }, troll : {
-
+      arrivee : {text : ""},
+      attaque : {text : ""},
+      fuite : {text : ""},
+      suivi : {text : ""}
     }, piranha : {
-
+      arrivee : {text : ""},
+      attaque : {text : ""},
+      fuite : {text : ""},
+      suivi : {text : ""}
     } , fantôme : {
-
+      arrivee : {text : ""},
+      attaque : {text : ""},
+      fuite : {text : ""},
+      suivi : {text : ""}
     }, cactus : {
-
+      arrivee : {text : ""},
+      attaque : {text : ""},
+      fuite : {text : ""},
+      suivi : {text : ""}
     }, zombie : {
-
+      arrivee : {text : ""},
+      attaque : {text : ""},
+      fuite : {text : ""},
+      suivi : {text : ""}
     }, yéti : {
-
+      arrivee : {text : ""},
+      attaque : {text : ""},
+      fuite : {text : ""},
+      suivi : {text : ""}
     }
   },
   français : {
-
+    ours : {
+      arrivee : {text : ""},
+      attaque : {text : ""},
+      fuite : {text : ""},
+      suivi : {text : ""}
+    }, fennec : {
+      arrivee : {text : ""},
+      attaque : {text : ""},
+      fuite : {text : ""},
+      suivi : {text : ""}
+    }, troll : {
+      arrivee : {text : ""},
+      attaque : {text : ""},
+      fuite : {text : ""},
+      suivi : {text : ""}
+    }, piranha : {
+      arrivee : {text : ""},
+      attaque : {text : ""},
+      fuite : {text : ""},
+      suivi : {text : ""}
+    } , fantôme : {
+      arrivee : {text : ""},
+      attaque : {text : ""},
+      fuite : {text : ""},
+      suivi : {text : ""}
+    }, cactus : {
+      arrivee : {text : ""},
+      attaque : {text : ""},
+      fuite : {text : ""},
+      suivi : {text : ""}
+    }, zombie : {
+      arrivee : {text : ""},
+      attaque : {text : ""},
+      fuite : {text : ""},
+      suivi : {text : ""}
+    }, yéti : {
+      arrivee : {text : ""},
+      attaque : {text : ""},
+      fuite : {text : ""},
+      suivi : {text : ""}
+    }
   }
 }
+
+
 const monsterAtLocationList = {
   caverne : ["ours","fennec","troll",],
   montagne : ["ours","fennec","troll","yéti"],
