@@ -65,7 +65,7 @@ const actionTextList = {
           ruisseau : {text: "Tu t'endors avec les pieds dans l'eau",},
           marécage : {text: "Tu t'endors en ne sentant pas la rose",},
           ville : {text: "Tu t'endors confortablement",},
-          "plaine étrange" : {text: "Tu t'endors",},
+          "plaine étrange" : {text: "Tu t'endors...",},
           toundra : {text: "Tu t'endors en grelottant",},
         },
         manger : {
@@ -96,13 +96,13 @@ const actionTextList = {
           caverne : {text: "Tu décampes hors de la caverne",},
           montagne : {text: "Tu décampes en t'essoufflant",},
           désert : {text: "Tu décampes en transpirant",},
-          forêt : {text: "",},
-          plaine : {text: "",},
-          ruisseau : {text: "",},
-          marécage : {text: ""},
-          ville : {text: ""},
-          "plaine étrange" : {text: ""},
-          toundra : {text: ""},
+          forêt : {text: "Tu décampes en te prennant des branches dans le visage",},
+          plaine : {text: "Tu décampes écrasant l'herbe",},
+          ruisseau : {text: "Tu décampes en faisant splash splash",},
+          marécage : {text: "Tu décampes en avalant des moustiques"},
+          ville : {text: "Tu décampes de la ville"},
+          "plaine étrange" : {text: "Tu décampes dans une étrange atmosphère"},
+          toundra : {text: "Tu décampes gelé jusqu'aux os"},
         }
     }
 }
@@ -116,7 +116,7 @@ const monsterTextList = {
       suivi : {text : "L'ours t'poursuit"}
     }, fennec : {
       arrivee : {text : "Un fennec avec des méga oreilles arrive"},
-      attaque : {text : "Un fennec t'mords"},
+      attaque : {text : "Un fennec t'mord"},
       fuite : {text : "Tu fuis le fennec"},
       suivi : {text : "L'fennec t'poursuit"}
     }, troll : {
@@ -126,19 +126,19 @@ const monsterTextList = {
       suivi : {text : "L'troll t'poursuit"}
     }, piranha : {
       arrivee : {text : "Un piranha aux dents pointues arrive"},
-      attaque : {text : "L'pirahna t'mords"},
+      attaque : {text : "L'pirahna t'mord"},
       fuite : {text : "Tu fuis le pirahna"},
       suivi : {text : "L'pirahna saute hors de l'eau et t'poursuit"}
     } , fantôme : {
       arrivee : {text : "Un fantôme arrive"},
-      attaque : {text : "L'fantôme te fou la frousse"},
+      attaque : {text : "L'fantôme te fout la frousse"},
       fuite : {text : "Tu fuis l'fantôme"},
       suivi : {text : "Le fantôme t'poursuit"}
     }, cactus : {
       arrivee : {text : "Un cactus arrive (enfin...)"},
       attaque : {text : "L'cactus te pique"},
       fuite : {text : "Tu fuis le cactus (ah ouin?)"},
-      suivi : {text : "Étonnament, le cactus t'poursuit..."}
+      suivi : {text : "Étonnamment, le cactus t'poursuit..."}
     }, zombie : {
       arrivee : {text : "Un zombie arrive"},
       attaque : {text : "L'zombie essaye de manger ton cerveau"},
@@ -153,46 +153,45 @@ const monsterTextList = {
   },
   français : {
     ours : {
-      arrivee : {text : ""},
-      attaque : {text : ""},
-      fuite : {text : ""},
-      suivi : {text : ""},
-
+      arrivee : {text : "Un ours enragé arrive"},
+      attaque : {text : "L'ours te griffe"},
+      fuite : {text : "Tu échappes aux pattes griffues de l'ours"},
+      suivi : {text : "L'ours te poursuit"}
     }, fennec : {
-      arrivee : {text : ""},
-      attaque : {text : ""},
-      fuite : {text : ""},
-      suivi : {text : ""},
+      arrivee : {text : "Un fennec avec des oreilles géantes arrive"},
+      attaque : {text : "Un fennec te mord"},
+      fuite : {text : "Tu fuis le fennec"},
+      suivi : {text : "Le fennec te poursuit"}
     }, troll : {
-      arrivee : {text : ""},
-      attaque : {text : ""},
-      fuite : {text : ""},
-      suivi : {text : ""}
+      arrivee : {text : "Un gros troll arrive"},
+      attaque : {text : "Le gros troll te frappe"},
+      fuite : {text : "Tu fuis le gros troll"},
+      suivi : {text : "Le troll te poursuit"}
     }, piranha : {
-      arrivee : {text : ""},
-      attaque : {text : ""},
-      fuite : {text : ""},
-      suivi : {text : ""}
+      arrivee : {text : "Un piranha aux dents pointues arrive"},
+      attaque : {text : "Le pirahna te mord"},
+      fuite : {text : "Tu fuis le pirahna"},
+      suivi : {text : "Le pirahna saute hors de l'eau et te poursuit"}
     } , fantôme : {
-      arrivee : {text : ""},
-      attaque : {text : ""},
-      fuite : {text : ""},
-      suivi : {text : ""}
+      arrivee : {text : "Un fantôme arrive"},
+      attaque : {text : "Le fantôme te fiche la frousse"},
+      fuite : {text : "Tu fuis le fantôme"},
+      suivi : {text : "Le fantôme te poursuit"}
     }, cactus : {
-      arrivee : {text : ""},
-      attaque : {text : ""},
-      fuite : {text : ""},
-      suivi : {text : ""}
+      arrivee : {text : "Un cactus arrive (hein...)"},
+      attaque : {text : "Le cactus te pique"},
+      fuite : {text : "Tu fuis le cactus (sérieux ?)"},
+      suivi : {text : "Étonnament, le cactus te poursuit..."}
     }, zombie : {
-      arrivee : {text : ""},
-      attaque : {text : ""},
-      fuite : {text : ""},
-      suivi : {text : ""}
+      arrivee : {text : "Un zombie arrive"},
+      attaque : {text : "Le zombie essaye de te manger le cerveau"},
+      fuite : {text : "Tu fuis le zombie"},
+      suivi : {text : "Le zombie te poursuit"}
     }, yéti : {
-      arrivee : {text : ""},
-      attaque : {text : ""},
-      fuite : {text : ""},
-      suivi : {text : ""}
+      arrivee : {text : "Un yéti arrive"},
+      attaque : {text : "Le yéti te saute dessus"},
+      fuite : {text : "Tu fuis le yéti"},
+      suivi : {text : "Le yéti te poursuit"}
     }
   }
 }
