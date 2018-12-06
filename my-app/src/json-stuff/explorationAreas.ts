@@ -1,6 +1,6 @@
 
-const areaList = ["carverne", "montagne", "désert", "forêt", "plaine", "ruine", "ruisseau", "marécage", "ville", "plaine étrange", "toundra"];
-const ennemiesList = ["ours", "fennec", "troll", "cactus", "fantôme", "piranha", "fantôme", "cactus", "zombie", "yéti"];
+const areaList = ["carverne", "montagne", "désert", "forêt", "plaine", "ruisseau", "marécage", "ville", "plaine étrange", "toundra"];
+const monsterList = ["ours", "fennec", "troll",, "piranha", "fantôme", "cactus", "zombie", "yéti"];
 const objectList = ["poêle", "roche", "hameçon", "poisson", "huile", "lampe", "pelle", "VIPI"];
 const actionList = ["dormir", "manger", "explorer", "fuir"];
 // Action
@@ -47,7 +47,7 @@ const actionTextList = {
           montagne : "Tu dégages pis tu t'essoufles",
           désert : "Tu dégages pis tu sues",
           forêt : "Tu dégages ",
-          plaine : "T",
+          plaine : "Tu dégages",
           ruisseau : "",
           marécage : "",
           ville : "",
@@ -107,9 +107,38 @@ const actionTextList = {
     }
 }
 
+const monsterTextList = {
+  quebecois : {
+    ours : {
+      arrivee : {text : ""},
+      attaque : {text : ""},
+      fuite : {text : ""},
+      suivi : {text : ""}
+
+    }, fennec : {
+
+    }, troll : {
+
+    }, piranha : {
+
+    } , fantôme : {
+
+    }, cactus : {
+
+    }, zombie : {
+
+    }, yéti : {
+
+    }
+  },
+  français : {
+
+  }
+}
+
 export default{
   areaList,
-  ennemiesList,
+  monsterList,
   objectList,
   actionList,
 };
