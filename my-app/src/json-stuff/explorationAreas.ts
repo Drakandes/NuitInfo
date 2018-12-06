@@ -2,7 +2,7 @@
 const areaList = ["carverne", "montagne", "désert", "forêt", "plaine", "ruine", "ruisseau", "marécage", "ville", "plaine étrange", "toundra"];
 const ennemiesList = ["ours", "fennec", "troll", "cactus", "fantôme", "piranha", "fantôme", "cactus", "zombie", "yéti"];
 const objectList = ["poêle", "roche", "hameçon", "poisson", "huile", "lampe", "pelle", "VIPI"];
-const actionList = ["dormir", "manger", "explorer", "fuir", "feu de camp"];
+const actionList = ["dormir", "manger", "explorer", "fuir"];
 // Action
 const actionTextList = {
     quebecois : {
@@ -69,9 +69,6 @@ const actionTextList = {
           toundra : ""
         },
         manger : {
-
-        },
-        "chercher bouffe" : {
           caverne : "",
           montagne : "",
           désert : "",
@@ -108,11 +105,12 @@ const actionTextList = {
           toundra : ""
         }
     }
+}
 
 export default{
   areaList,
   ennemiesList,
   objectList,
-  actionList
+  actionList,
 };
 
