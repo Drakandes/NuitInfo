@@ -8,8 +8,11 @@
       <div class="middle-item-nogrow text-path-option">
         {{path.pathOptions[0][0].toUpperCase() + path.pathOptions[0].slice(1)}}
       </div>
-      <div class="middle-item-nogrow mini-action-box center-vertically" (click)="path.explorePathOption(0)"> 
+      <div class="middle-item-nogrow mini-action-box center-vertically tooltip" (click)="path.explorePathOption(0)"> 
         {{stat.language === 'français' ? "S'y aventurer" : "Aweille là, let's go!" }}
+        <div class="tooltiptext">
+          OH YEAH
+        </div>
       </div>
     </div>
     <div class="top-section flexbox-column-spc-evenly" [style.background-color]="getPathOptionColor(1)">
