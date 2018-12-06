@@ -7,6 +7,7 @@ const actionList = ["dormir", "manger", "explorer", "fuir"];
 const actionTextList = {
     quebecois : {
         dormir : {
+          tooltiptext : "Tu fais un power nap pour t'remettre sur le piton",
           caverne : {text: "Tu t'endors dans une caverne ben weat",},
           montagne : {text: "Tu t'endors full essoufler",},
           désert : {text: "Tu t'endors pis y fait frette",},
@@ -19,6 +20,7 @@ const actionTextList = {
           toundra : {text: "Tu t'endors pis y fait fretttttteeeeee!",},
         },
         manger : {
+          tooltiptext : "Tu bouffes pour pour t'remettre sur le piton",
           caverne : {text: "Tu trouves des choses pas mal moisies",},
           montagne : {text: "Tu trouves presque inque des roches",},
           désert : {text: "Tu trouves presque inque du sable",},
@@ -31,6 +33,7 @@ const actionTextList = {
           toundra : {text: "Tu trouves des choses gelés",},
         },
         explorer : {
+          tooltiptext : "T'explores pour trouver de quoi de pas pire",
           caverne : {text: "Tu explores les recoins",},
           montagne : {text: "Tu vires autour des roches",},
           désert : {text: "Tu tasses du sable",},
@@ -43,6 +46,7 @@ const actionTextList = {
           toundra : {text: "Tu fais un bonhomme de neige",},
         },
         fuir : {
+          tooltiptext : "Tu dégages en vitesse",
           caverne : {text: "Tu dégages d'la caverne",},
           montagne : {text: "Tu dégages pis tu t'essoufles",},
           désert : {text: "Tu dégages pis tu sues",},
