@@ -1,0 +1,9 @@
+<div class="gauge-section flexbox-column-spc-evenly">
+  <div class="middle-item center-item " *ngFor="let gaugeType of stat.gaugeList; let gaugeIndex = index">
+    <div class="gauge-box flexbox-column-start">
+      <div class="gauge-empty" [style.height]="getGaugeEmptyPerc(gaugeType)"></div>
+      <div class="gauge-full" [style.height]="getGaugeFullPerc(gaugeType)"></div>
+    </div>
+    <i class="gauge-icon material-icons white-text">{{stat.gaugeInfo[gaugeType].iconName}}</i>
+  </div>
+</div>

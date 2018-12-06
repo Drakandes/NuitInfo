@@ -9,6 +9,5 @@ export class PathExplorationService {
   constructor() { }
 
   public initExplorationService(){
-    console.log(explorationData.areaList);
   }
 }

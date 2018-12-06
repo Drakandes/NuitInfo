@@ -12,26 +12,34 @@
 
 .path-sections{
     height: 50%;
-    background-color: #ffd180;
+    background-color: #eceff1;
 }
 
 .top-section{
     height: 100%;
     width: 100%;
-    border-color: #ffab40;
+    border-color: #cfd8dc;
     border-width: 2px;
     border-style: solid;
 }
 
 .action-sections{
     height: 50%;
-    background-color:#fbe9e7;
+    background-color:#eceff1;
 }
 
 .bottom-section{
     height: 100%;
     width: 100%;
-    border-color: #ffccbc;
+    border-color: #cfd8dc;
     border-width: 2px;
     border-style: solid;
+}
+
+.action-box{
+    width: 300px;
+    height: 75px;
+    background-color: #fce4ec;
+    border: 4px solid #ff80ab;
+    border-radius: 20px;
 }
