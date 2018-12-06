@@ -37,9 +37,9 @@ const actionTextList = {
           forêt : {text: "Tu tasses des feuilles",},
           plaine : {text: "Tu écrapoutilles des brins d'herbe",},
           ruisseau : {text: "Tu passes la tête sous l'eau",},
-          marécage : {text: "Tu t'pince le nez",},
-          ville : {text: "Tu marche, ben safe",},
-          "plaine étrange" : {text: "Tu explore l'endroit étrange",},
+          marécage : {text: "Tu t'pinces le nez",},
+          ville : {text: "Tu marches, ben safe",},
+          "plaine étrange" : {text: "Tu explores l'endroit étrange",},
           toundra : {text: "Tu fais un bonhomme de neige",},
         },
         fuir : {
