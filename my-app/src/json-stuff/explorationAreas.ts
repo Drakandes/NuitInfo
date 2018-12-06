@@ -205,7 +205,7 @@ const locationInfo = {
       arrivee : {text : ""}
     },
     français : {
-      arrivee : {text : ""}
+      arrivee : {text : "Tu entres dans la caverne"}
     }
   },
   montagne : {monsterList : ["ours","fennec","troll","yéti"],
@@ -215,7 +215,7 @@ const locationInfo = {
       arrivee : {text : "T'arrives à la montagne"}
     },
     français : {
-      arrivee : {text : ""}
+      arrivee : {text : "Tu arrives à la montagne"}
     }
   },
   désert : {monsterList : ["fennec","cactus",],
@@ -225,7 +225,7 @@ const locationInfo = {
       arrivee : {text : "T'arrives dans l'désert pis y fait chaud"}
     },
     français : {
-      arrivee : {text : ""}
+      arrivee : {text : "Tu arrives dans le désert et il fait chaud"}
     }
   },
   forêt : {monsterList : ["ours","troll","zombie",],
@@ -235,7 +235,7 @@ const locationInfo = {
       arrivee : {text : "T'arrives en forêt"}
     },
     français : {
-      arrivee : {text : ""}
+      arrivee : {text : "Tu entres dans la forêt"}
     }
   },
   plaine : {monsterList : ["fennec","zombie",],
@@ -245,7 +245,7 @@ const locationInfo = {
     arrivee : {text : "T'arrives dans la plaine"}
   },
   français : {
-    arrivee : {text : ""}
+    arrivee : {text : "Tu arrives dans la plaine"}
   }
   },
   ruisseau : {monsterList : ["ours","piranha","zombie",],
@@ -255,7 +255,7 @@ const locationInfo = {
     arrivee : {text : "T'arrives au ruisseau"}
   },
   français : {
-    arrivee : {text : ""}
+    arrivee : {text : "Tu arrives au ruisseau"}
   }
   },
   marécage : {monsterList : ["fantôme","zombie",],
@@ -265,7 +265,7 @@ const locationInfo = {
     arrivee : {text : "T'arrives au marécage, pis ça pue"}
   },
   français : {
-    arrivee : {text : ""}
+    arrivee : {text : "Tu entres dans le marécage, et ça sent mauvais"}
   }
   },
   ville : {monsterList : ["fantôme","zombie",],
@@ -275,7 +275,7 @@ const locationInfo = {
       arrivee : {text : "T'arrives en ville"}
     },
     français : {
-      arrivee : {text : ""}
+      arrivee : {text : "Tu entres dans la ville"}
     }
   },
   "plaine étrange" : {monsterList : [],
@@ -285,7 +285,7 @@ const locationInfo = {
       arrivee : {text : "T'arrives dans une plaine ... étrange"}
     },
     français : {
-      arrivee : {text : ""}
+      arrivee : {text : "Tu arrives dans une plaine... étrange"}
     }
   },
   toundra : {monsterList : ["ours","troll","yéti"],
@@ -295,7 +295,7 @@ const locationInfo = {
       arrivee : {text : "T'arrives dans la toundra et y fait frette!"}
     },
     français : {
-      arrivee : {text : ""}
+      arrivee : {text : "Tu arrives dans la toundra, et tu as froid"}
     }
   },
 }
@@ -316,16 +316,16 @@ const objectInfo = {
       }
     },
     français : {
-      récupérer : {text : ""},
+      récupérer : {text : "Tu récupères une poêle"},
       utiliser : {
-        ours : { text : ""}, 
-        fennec : { text : "" }, 
-        troll : { text : ""}, 
-        piranha : { text : ""} , 
-        fantôme : { text : ""}, 
-        cactus : { text : ""}, 
-        zombie : { text : ""}, 
-        yéti : { text : ""}
+        ours : { text : "Tu balances la poêle et tu cognes l'ours en plein visage"}, 
+        fennec : { text : "Tu balances la poêle et tu cognes le fennec en plein visage" }, 
+        troll : { text : "Tu balances la poêle et tu cognes le troll en plein visage"}, 
+        piranha : { text : "Tu balances la poêle et plouf ton attaque tombe à l'eau"} , 
+        fantôme : { text : "Tu balances la poêle et ... rien"}, 
+        cactus : { text : "Tu balances la poêle et tu cognes le cactus en plein visage"}, 
+        zombie : { text : "Tu balances la poêle et tu cognes le zombie en pleine face"}, 
+        yéti : { text : "Tu balances la poêle et tu cognes le yéti en plein visage"}
       }
     }
   }, 
@@ -344,16 +344,16 @@ const objectInfo = {
       }
     },
     français : {
-      récupérer : {text : ""},
+      récupérer : {text : "Tu ramasses une pierre"},
       utiliser : {
-        ours : { text : ""}, 
-        fennec : { text : "" }, 
-        troll : { text : ""}, 
-        piranha : { text : ""} , 
-        fantôme : { text : ""}, 
-        cactus : { text : ""}, 
-        zombie : { text : ""}, 
-        yéti : { text : ""}
+        ours : { text : "Tu jettes la pierre et tu cognes l'ours en plein visage"}, 
+        fennec : { text : "Tu jettes la pierre et tu cognes le fennec en plein visage" }, 
+        troll : { text : "Tu jettes la pierre et tu cognes le troll en plein visage"}, 
+        piranha : { text : "Tu jettes la pierre et plouf ton attaque tombe à l'eau"} , 
+        fantôme : { text : "Tu jettes la pierre et ... rien"}, 
+        cactus : { text : "Tu jettes la pierre et tu cognes le cactus en plein visage"}, 
+        zombie : { text : "Tu jettes la pierre et tu cognes le zombie en plein visage"}, 
+        yéti : { text : "Tu jettes la pierre et tu cognes le yéti en plein visage"}
       }
     }
   }, 
