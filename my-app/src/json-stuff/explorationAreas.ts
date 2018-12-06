@@ -46,13 +46,13 @@ const actionTextList = {
           caverne : {text: "Tu dégages d'la caverne",},
           montagne : {text: "Tu dégages pis tu t'essoufles",},
           désert : {text: "Tu dégages pis tu sues",},
-          forêt : {text: "Tu dégages ",},
-          plaine : {text: "T",},
-          ruisseau : {text: "",},
-          marécage : {text: "",},
-          ville : {text: "",},
-          "plaine étrange" : {text: "",},
-          toundra : {text: "",},
+          forêt : {text: "Tu dégages pis en te prennant des branches dans face",},
+          plaine : {text: "Tu dégages en écrapoutissant de l'herbe",},
+          ruisseau : {text: "Tu dégages en faisant splash splash",},
+          marécage : {text: "Tu dégages et tu te prends des moustiques en pleine face",},
+          ville : {text: "Tu dégages de la ville",},
+          "plaine étrange" : {text: "Tu dégages dans une ambiance étrange",},
+          toundra : {text: "Tu dégages en crissant des dents",},
         }
     },
     français : {
@@ -195,6 +195,7 @@ const monsterTextList = {
     }
   }
 }
+
 
 
 const monsterAtLocationList = {
