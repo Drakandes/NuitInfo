@@ -16,4 +16,12 @@ export class HomePageComponent implements OnInit {
   ngOnInit() {
     this.path.initExplorationService()
   }
+
+  private getPathOptionColor(pathOptionIndex){
+    return this.path.pathOptionsInfo[pathOptionIndex].backgroundColor
+  }
+
+  private getPathOptionName(pathOptionIndex){
+    return this.path.pathOptionsInfo[pathOptionIndex].backgroundColor
+  }
 }

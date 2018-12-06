@@ -1,8 +1,8 @@
-
 const areaList = ["carverne", "montagne", "désert", "forêt", "plaine", "ruisseau", "marécage", "ville", "plaine étrange", "toundra"];
 const monsterList = ["ours", "fennec", "troll",, "piranha", "fantôme", "cactus", "zombie", "yéti"];
 const objectList = ["poêle", "roche", "hameçon", "poisson", "huile", "lampe", "pelle", "VIPI"];
 const actionList = ["dormir", "manger", "explorer", "fuir"];
+
 // Action
 const actionTextList = {
     quebecois : {
@@ -201,16 +201,23 @@ const locationInfo = {
     monsterList : ["ours","fennec","troll",],
     backgroundColor: "#795548",
     chanceModifier: 90,
+    healthMinus: 10,
+    sleepMinus: 5,
+    hungerMinus: 5,
     quebecois : {
-      arrivee : {text : ""}
+      arrivee : {text : "T'arrives dans une caverne"}
     },
     français : {
       arrivee : {text : "Tu entres dans la caverne"}
     }
   },
-  montagne : {monsterList : ["ours","fennec","troll","yéti"],
+  montagne : {
+    monsterList : ["ours","fennec","troll","yéti"],
     backgroundColor: "#9e9e9e",
     chanceModifier: 10,
+    healthMinus: 0,
+    sleepMinus: 20,
+    hungerMinus: 5,
     quebecois : {
       arrivee : {text : "T'arrives à la montagne"}
     },
@@ -218,9 +225,13 @@ const locationInfo = {
       arrivee : {text : "Tu arrives à la montagne"}
     }
   },
-  désert : {monsterList : ["fennec","cactus",],
+  désert : {
+    monsterList : ["fennec","cactus",],
     backgroundColor: "#fff9c4",
     chanceModifier: 80,
+    healthMinus: 0,
+    sleepMinus: 15,
+    hungerMinus: 15,
     quebecois : {
       arrivee : {text : "T'arrives dans l'désert pis y fait chaud"}
     },
@@ -228,9 +239,13 @@ const locationInfo = {
       arrivee : {text : "Tu arrives dans le désert et il fait chaud"}
     }
   },
-  forêt : {monsterList : ["ours","troll","zombie",],
+  forêt : {
+    monsterList : ["ours","troll","zombie",],
     backgroundColor: "#388e3c",
     chanceModifier: 100,
+    healthMinus: 10,
+    sleepMinus: 5,
+    hungerMinus: 0,
     quebecois : {
       arrivee : {text : "T'arrives en forêt"}
     },
@@ -238,39 +253,55 @@ const locationInfo = {
       arrivee : {text : "Tu entres dans la forêt"}
     }
   },
-  plaine : {monsterList : ["fennec","zombie",],
-   backgroundColor: "#dce775",
-   chanceModifier: 95,
-   quebecois : {
-    arrivee : {text : "T'arrives dans la plaine"}
+  plaine : {
+    monsterList : ["fennec","zombie",],
+    backgroundColor: "#dce775",
+    chanceModifier: 95,
+    healthMinus: 5,
+    sleepMinus: 10,
+    hungerMinus: 5,
+    quebecois : {
+     arrivee : {text : "T'arrives dans la plaine"}
+    },
+    français : {
+      arrivee : {text : "Tu arrives dans la plaine"}
+    }
   },
-  français : {
-    arrivee : {text : "Tu arrives dans la plaine"}
-  }
+  ruisseau : {
+    monsterList : ["ours","piranha","zombie",],
+    backgroundColor: "#80deea",
+    chanceModifier: 100,
+    healthMinus: 0,
+    sleepMinus: 5,
+    hungerMinus: 0,
+    quebecois : {
+     arrivee : {text : "T'arrives au ruisseau"}
+    },
+    français : {
+      arrivee : {text : "Tu arrives au ruisseau"}
+    }
   },
-  ruisseau : {monsterList : ["ours","piranha","zombie",],
-   backgroundColor: "#80deea",
-   chanceModifier: 100,
-   quebecois : {
-    arrivee : {text : "T'arrives au ruisseau"}
+  marécage : {
+    monsterList : ["fantôme","zombie",],
+    backgroundColor: "#00897b",
+    chanceModifier: 70,
+    healthMinus: 5,
+    sleepMinus: 10,
+    hungerMinus: 0,
+    quebecois : {
+      arrivee : {text : "T'arrives au marécage, pis ça pue"}
+    },
+    français : {
+      arrivee : {text : "Tu entres dans le marécage, et ça sent mauvais"}
+    }
   },
-  français : {
-    arrivee : {text : "Tu arrives au ruisseau"}
-  }
-  },
-  marécage : {monsterList : ["fantôme","zombie",],
-   backgroundColor: "#00897b",
-   chanceModifier: 70,
-   quebecois : {
-    arrivee : {text : "T'arrives au marécage, pis ça pue"}
-  },
-  français : {
-    arrivee : {text : "Tu entres dans le marécage, et ça sent mauvais"}
-  }
-  },
-  ville : {monsterList : ["fantôme","zombie",],
+  ville : {
+    monsterList : ["fantôme","zombie",],
     backgroundColor: "#90a4ae",
     chanceModifier: 35,
+    healthMinus: 10,
+    sleepMinus: 5,
+    hungerMinus: 0,
     quebecois : {
       arrivee : {text : "T'arrives en ville"}
     },
@@ -278,9 +309,13 @@ const locationInfo = {
       arrivee : {text : "Tu entres dans la ville"}
     }
   },
-  "plaine étrange" : {monsterList : [],
+  "plaine étrange" : {
+    monsterList : [],
     backgroundColor: "#f48fb1",
     chanceModifier: 5,
+    healthMinus: 0,
+    sleepMinus: 0,
+    hungerMinus: 0,
     quebecois : {
       arrivee : {text : "T'arrives dans une plaine ... étrange"}
     },
@@ -288,9 +323,13 @@ const locationInfo = {
       arrivee : {text : "Tu arrives dans une plaine... étrange"}
     }
   },
-  toundra : {monsterList : ["ours","troll","yéti"],
+  toundra : {
+    monsterList : ["ours","troll","yéti"],
     backgroundColor: "#c5cae9",
     chanceModifier: 50,
+    healthMinus: 5,
+    sleepMinus: 15,
+    hungerMinus: 10,
     quebecois : {
       arrivee : {text : "T'arrives dans la toundra et y fait frette!"}
     },
@@ -359,16 +398,16 @@ const objectInfo = {
   }, 
   hameçon : {
     quebecois : {
-      récupérer : {text : ""},
+      récupérer : {text : "Tu pognes un hameçon"},
       utiliser : {
-        ours : { text : ""}, 
-        fennec : { text : "" }, 
-        troll : { text : ""}, 
-        piranha : { text : ""} , 
-        fantôme : { text : ""}, 
-        cactus : { text : ""}, 
-        zombie : { text : ""}, 
-        yéti : { text : ""}
+        ours : { text : "Tu garroches l'hameçon et tu fais juste l'énerver plus..."}, 
+        fennec : { text : "Tu garroches l'hameçon et tu fais juste l'énerver plus..." }, 
+        troll : { text : "Tu garroches l'hameçon et tu fais juste l'énerver plus..."}, 
+        piranha : { text : "Tu accroches les piranha au bout de ton hameçon"} , 
+        fantôme : { text : "Tu garroches l'hameçon et ... rien"}, 
+        cactus : { text : "Tu garroches l'hameçon et ... rien"}, 
+        zombie : { text : "Tu garroches l'hameçon et tu fais juste l'énerver plus..."}, 
+        yéti : { text : "Tu garroches l'hameçon et tu fais juste l'énerver plus..."}
       }
     },
     français : {
@@ -387,16 +426,16 @@ const objectInfo = {
   },
   poisson : {
     quebecois : {
-      récupérer : {text : ""},
+      récupérer : {text : "Tu pognes un poisson"},
       utiliser : {
-        ours : { text : ""}, 
-        fennec : { text : "" }, 
-        troll : { text : ""}, 
-        piranha : { text : ""} , 
-        fantôme : { text : ""}, 
-        cactus : { text : ""}, 
-        zombie : { text : ""}, 
-        yéti : { text : ""}
+        ours : { text : "Tu garroches le poisson et l'ours le trouve plus intéressant que toi"}, 
+        fennec : { text : "Tu garroches le poisson et l'fennec le trouve plus intéressant que toi" }, 
+        troll : { text : "Tu garroches le poisson et tu fais juste l'énerver plus..."}, 
+        piranha : { text : "Tu garroches le poisson et tu fais juste l'énerver plus..."} , 
+        fantôme : { text : "Tu garroches le poisson et ... rien"}, 
+        cactus : { text : "Tu garroches le poisson et ... rien"}, 
+        zombie : { text : "Tu garroches l'hameçon et tu fais juste l'énerver plus..."}, 
+        yéti : { text : "Tu garroches le poisson et l'yéti le trouve plus intéressant que toi"}
       }
     },
     français : {
@@ -415,16 +454,16 @@ const objectInfo = {
   }, huile : 
   {
     quebecois : {
-      récupérer : {text : ""},
+      récupérer : {text : "Tu pognes une flasque d'huile"},
       utiliser : {
-        ours : { text : ""}, 
-        fennec : { text : "" }, 
-        troll : { text : ""}, 
-        piranha : { text : ""} , 
-        fantôme : { text : ""}, 
-        cactus : { text : ""}, 
-        zombie : { text : ""}, 
-        yéti : { text : ""}
+        ours : { text : "Tu garroches l'huile et tu fais juste l'énerver plus..."}, 
+        fennec : { text : "Tu garroches l'huile et tu l'fais glisser" }, 
+        troll : { text : "Tu garroches l'huile et tu fais juste l'énerver plus..."}, 
+        piranha : { text : "Tu garroches l'huile et il ne voit plus rien"} , 
+        fantôme : { text : "Tu garroches l'huile et ... rien"}, 
+        cactus : { text : "Tu garroches l'huile et ... rien"}, 
+        zombie : { text : "Tu garroches l'huile et il glisssseee pas mal plus loin"}, 
+        yéti : { text : "Tu garroches l'hameçon et tu fais juste l'énerver plus..."}
       }
     },
     français : {
@@ -443,16 +482,16 @@ const objectInfo = {
   }, lampe :
   {
     quebecois : {
-      récupérer : {text : ""},
+      récupérer : {text : "Tu pognes une lampe"},
       utiliser : {
-        ours : { text : ""}, 
-        fennec : { text : "" }, 
-        troll : { text : ""}, 
-        piranha : { text : ""} , 
-        fantôme : { text : ""}, 
-        cactus : { text : ""}, 
-        zombie : { text : ""}, 
-        yéti : { text : ""}
+        ours : { text : "T'éclaires l'ours et tu fais juste l'énerver plus..."}, 
+        fennec : { text : "T'éclaires l'fennec et tu fais juste l'énerver plus..." }, 
+        troll : { text : "T'éclaires l'troll et tu fais juste l'énerver plus..."}, 
+        piranha : { text : "T'éclaires l'piranha et tu fais juste l'énerver plus..."} , 
+        fantôme : { text : "T'éclaires l'fantôme et il s'enfuit"}, 
+        cactus : { text : "T'éclaires l'fantôme et il s'enfuit!!!(Ah ouin?)"}, 
+        zombie : { text : "T'éclaires l'fantôme et il s'enfuit"}, 
+        yéti : { text : "T'éclaires l'fennec et tu fais juste l'énerver plus..."}
       }
     },
     français : {
@@ -471,16 +510,16 @@ const objectInfo = {
   }, pelle : 
   {
     quebecois : {
-      récupérer : {text : ""},
+      récupérer : {text : "Tu pognes une pelle"},
       utiliser : {
-        ours : { text : ""}, 
-        fennec : { text : "" }, 
-        troll : { text : ""}, 
-        piranha : { text : ""} , 
-        fantôme : { text : ""}, 
-        cactus : { text : ""}, 
-        zombie : { text : ""}, 
-        yéti : { text : ""}
+        ours : { text : "T'assomes l'ours avec un coup de pelle en pleine face"}, 
+        fennec : { text : "Le fennec esquive pis te mord" }, 
+        troll : { text : "T'assomes l'troll avec un coup de pelle en pleine face"}, 
+        piranha : { text : "Tu tombes à l'eau avec la pelle et le l'piranha t'mange"} , 
+        fantôme : { text : "T'assomes l'fantôme et ... rien"}, 
+        cactus : { text : "T'assomes l'fantôme et ... rien"}, 
+        zombie : { text : "T'assomes l'zombie avec un coup de pelle en pleine face"}, 
+        yéti : { text : "T'assomes l'yéti avec un coup de pelle en pleine face"}
       }
     },
     français : {
@@ -499,16 +538,16 @@ const objectInfo = {
   }, VIPI : 
   {
     quebecois : {
-      récupérer : {text : ""},
+      récupérer : {text : "VIPI vient t'aider"},
       utiliser : {
-        ours : { text : ""}, 
-        fennec : { text : "" }, 
-        troll : { text : ""}, 
-        piranha : { text : ""} , 
-        fantôme : { text : ""}, 
-        cactus : { text : ""}, 
-        zombie : { text : ""}, 
-        yéti : { text : ""}
+        ours : { text : "VIPI s'débarasse de l'ours"}, 
+        fennec : { text : "VIPI s'débarasse du fennec"}, 
+        troll : { text : "VIPI s'débarasse du troll"}, 
+        piranha : { text : "VIPI s'débarasse du piranha"} , 
+        fantôme : { text : "VIPI s'débarasse du fantôme"}, 
+        cactus : { text : "VIPI s'débarasse de cactus"}, 
+        zombie : { text : "VIPI s'débarasse de zombie"}, 
+        yéti : { text : "VIPI s'débarasse du yéti"}
       }
     },
     français : {

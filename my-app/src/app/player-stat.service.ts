@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class PlayerStatService {
 
+  public language = 'quebecois'
   public gaugeList = ['health', 'sleep', 'hunger']
 
   public gaugeInfo = {
