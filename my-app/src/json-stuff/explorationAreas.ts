@@ -20,7 +20,7 @@ const actionTextList = {
           toundra : {text: "Tu t'endors pis y fait fretttttteeeeee!",},
         },
         manger : {
-          tooltiptext : "Tu bouffes pour pour t'remettre sur le piton",
+          tooltiptext : "Tu bouffes jusqu'à être bourré",
           caverne : {text: "Tu trouves des choses pas mal moisies",},
           montagne : {text: "Tu trouves presque inque des roches",},
           désert : {text: "Tu trouves presque inque du sable",},
@@ -46,7 +46,7 @@ const actionTextList = {
           toundra : {text: "Tu fais un bonhomme de neige",},
         },
         fuir : {
-          tooltiptext : "Tu dégages en vitesse",
+          tooltiptext : "Tu dégages en vitesse à cause du danger",
           caverne : {text: "Tu dégages d'la caverne",},
           montagne : {text: "Tu dégages pis tu t'essoufles",},
           désert : {text: "Tu dégages pis tu sues",},
@@ -61,6 +61,7 @@ const actionTextList = {
     },
     français : {
         dormir : {
+          tooltiptext : "Tu dors pour récupérer de l'énergie",
           caverne : {text: "Tu t'endors dans une caverne humide",},
           montagne : {text: "Tu t'endors à bout de souffle",},
           désert : {text: "Tu t'endors dans le froid",},
@@ -73,6 +74,7 @@ const actionTextList = {
           toundra : {text: "Tu t'endors en grelottant",},
         },
         manger : {
+          tooltiptext : "Tu mange pour remplir ta panse",
           caverne : {text: "Tu trouves des trucs tout moisis",},
           montagne : {text: "Tu ne trouves pratiquement que des cailloux",},
           désert : {text: "Tu ne trouves pratiquement que du sable",},
@@ -85,6 +87,7 @@ const actionTextList = {
           toundra : {text: "Tu trouves des trucs gelés",},
         },
         explorer : {
+          tooltiptext : "Tu explore les environs",
           caverne : {text: "Tu explores les environs",},
           montagne : {text: "Tu vadrouilles autour des roches",},
           désert : {text: "Tu creuses dans le sable",},
@@ -97,6 +100,7 @@ const actionTextList = {
           toundra : {text: "Tu fais un bonhome de neige"},
         },
         fuir : {
+          tooltiptext : "Tu fuis le danger",
           caverne : {text: "Tu décampes hors de la caverne",},
           montagne : {text: "Tu décampes en t'essoufflant",},
           désert : {text: "Tu décampes en transpirant",},
