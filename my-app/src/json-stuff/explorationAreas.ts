@@ -113,7 +113,7 @@ const monsterTextList = {
       arrivee : {text : ""},
       attaque : {text : ""},
       fuite : {text : ""},
-      suivi : {text : ""}
+      suivi : {text : ""},
 
     }, fennec : {
 
@@ -135,17 +135,49 @@ const monsterTextList = {
 
   }
 }
-const monsterAtLocationList = {
-  caverne : ["ours","fennec","troll",],
-  montagne : ["ours","fennec","troll","yéti"],
-  désert : ["fennec","cactus",],
-  forêt : ["ours","troll","zombie",],
-  plaine : ["fennec","zombie",],
-  ruisseau : ["ours","piranha","zombie",],
-  marécage : ["fantôme","zombie",],
-  ville : ["fantôme","zombie",],
-  "plaine étrange" : [],
-  toundra : ["ours","troll","yéti"],
+
+const locationInfo = {
+  caverne : {
+    monsterList : ["ours","fennec","troll",],
+    backgroundColor: "#795548",
+    chanceModifier: 90,
+  },
+  montagne : {monsterList : ["ours","fennec","troll","yéti"],
+    backgroundColor: "#9e9e9e",
+    chanceModifier: 10,
+  },
+  désert : {monsterList : ["fennec","cactus",],
+    backgroundColor: "#fff9c4",
+    chanceModifier: 80,
+  },
+  forêt : {monsterList : ["ours","troll","zombie",],
+    backgroundColor: "#388e3c",
+    chanceModifier: 100,
+  },
+  plaine : {monsterList : ["fennec","zombie",],
+   backgroundColor: "#dce775",
+   chanceModifier: 95,
+  },
+  ruisseau : {monsterList : ["ours","piranha","zombie",],
+   backgroundColor: "#80deea",
+   chanceModifier: 100,
+  },
+  marécage : {monsterList : ["fantôme","zombie",],
+   backgroundColor: "#00897b",
+   chanceModifier: 70,
+  },
+  ville : {monsterList : ["fantôme","zombie",],
+    backgroundColor: "#90a4ae",
+    chanceModifier: 35,
+  },
+  "plaine étrange" : {monsterList : [],
+    backgroundColor: "#f48fb1",
+    chanceModifier: 5,
+  },
+  toundra : {monsterList : ["ours","troll","yéti"],
+    backgroundColor: "#c5cae9",
+    chanceModifier: 50,
+  },
 }
 
 export default{
@@ -153,5 +185,6 @@ export default{
   monsterList,
   objectList,
   actionList,
+  locationInfo,
 };
 
