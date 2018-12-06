@@ -15,7 +15,7 @@ const actionTextList = {
           ruisseau : {text: "Tu t'endors les pieds dans l'eau",},
           marécage : {text: "Tu t'endors en puant",},
           ville : {text: "Tu t'endors pis t'es ben",},
-          "plaine étrange" : {text: "tu t'endors...",},
+          "plaine étrange" : {text: "Tu t'endors...",},
           toundra : {text: "Tu t'endors pis y fait fretttttteeeeee!",},
         },
         manger : {
@@ -37,22 +37,22 @@ const actionTextList = {
           forêt : {text: "Tu tasses des feuilles",},
           plaine : {text: "Tu écrapoutilles des brins d'herbe",},
           ruisseau : {text: "Tu passes la tête sous l'eau",},
-          marécage : {text: "Tu t'pince le nez",},
-          ville : {text: "Tu marche, ben safe",},
-          "plaine étrange" : {text: "Tu explore l'endroit étrange",},
+          marécage : {text: "Tu t'pinces le nez",},
+          ville : {text: "Tu marches, ben safe",},
+          "plaine étrange" : {text: "Tu explores l'endroit étrange",},
           toundra : {text: "Tu fais un bonhomme de neige",},
         },
         fuir : {
           caverne : {text: "Tu dégages d'la caverne",},
           montagne : {text: "Tu dégages pis tu t'essoufles",},
           désert : {text: "Tu dégages pis tu sues",},
-          forêt : {text: "Tu dégages ",},
-          plaine : {text: "T",},
-          ruisseau : {text: "",},
-          marécage : {text: "",},
-          ville : {text: "",},
-          "plaine étrange" : {text: "",},
-          toundra : {text: "",},
+          forêt : {text: "Tu dégages pis en te prennant des branches dans face",},
+          plaine : {text: "Tu dégages en écrapoutissant de l'herbe",},
+          ruisseau : {text: "Tu dégages en faisant splash splash",},
+          marécage : {text: "Tu dégages et tu te prends des moustiques en pleine face",},
+          ville : {text: "Tu dégages de la ville",},
+          "plaine étrange" : {text: "Tu dégages dans une ambiance étrange",},
+          toundra : {text: "Tu dégages en crissant des dents",},
         }
     },
     français : {
@@ -110,45 +110,45 @@ const actionTextList = {
 const monsterTextList = {
   quebecois : {
     ours : {
-      arrivee : {text : ""},
-      attaque : {text : ""},
-      fuite : {text : ""},
-      suivi : {text : ""}
+      arrivee : {text : "Un ours enragé arrive"},
+      attaque : {text : "L'ours t'griffe"},
+      fuite : {text : "Tu fuis les pattes griffues d'l'ours"},
+      suivi : {text : "L'ours t'poursuit"}
     }, fennec : {
-      arrivee : {text : ""},
-      attaque : {text : ""},
-      fuite : {text : ""},
-      suivi : {text : ""}
+      arrivee : {text : "Un fennec avec des méga oreilles arrive"},
+      attaque : {text : "Un fennec t'mords"},
+      fuite : {text : "Tu fuis le fennec"},
+      suivi : {text : "L'fennec t'poursuit"}
     }, troll : {
-      arrivee : {text : ""},
-      attaque : {text : ""},
-      fuite : {text : ""},
-      suivi : {text : ""}
+      arrivee : {text : "Un gros troll arrive"},
+      attaque : {text : "L'gros troll te balance une taloche"},
+      fuite : {text : "Tu fuis le gros troll"},
+      suivi : {text : "L'troll t'poursuit"}
     }, piranha : {
-      arrivee : {text : ""},
-      attaque : {text : ""},
-      fuite : {text : ""},
-      suivi : {text : ""}
+      arrivee : {text : "Un piranha aux dents pointues arrive"},
+      attaque : {text : "L'pirahna t'mords"},
+      fuite : {text : "Tu fuis le pirahna"},
+      suivi : {text : "L'pirahna saute hors de l'eau et t'poursuit"}
     } , fantôme : {
-      arrivee : {text : ""},
-      attaque : {text : ""},
-      fuite : {text : ""},
-      suivi : {text : ""}
+      arrivee : {text : "Un fantôme arrive"},
+      attaque : {text : "L'fantôme te fou la frousse"},
+      fuite : {text : "Tu fuis l'fantôme"},
+      suivi : {text : "Le fantôme t'poursuit"}
     }, cactus : {
-      arrivee : {text : ""},
-      attaque : {text : ""},
-      fuite : {text : ""},
-      suivi : {text : ""}
+      arrivee : {text : "Un cactus arrive (enfin...)"},
+      attaque : {text : "L'cactus te pique"},
+      fuite : {text : "Tu fuis le cactus (ah ouin?)"},
+      suivi : {text : "Étonnament, le cactus t'poursuit..."}
     }, zombie : {
-      arrivee : {text : ""},
-      attaque : {text : ""},
-      fuite : {text : ""},
-      suivi : {text : ""}
+      arrivee : {text : "Un zombie arrive"},
+      attaque : {text : "L'zombie essaye de manger ton cerveau"},
+      fuite : {text : "Tu fuis l'zombie"},
+      suivi : {text : "Le zombie t'poursuit"}
     }, yéti : {
-      arrivee : {text : ""},
-      attaque : {text : ""},
-      fuite : {text : ""},
-      suivi : {text : ""}
+      arrivee : {text : "Un yéti arrive"},
+      attaque : {text : "L'yéti t'saute dessus"},
+      fuite : {text : "Tu fuis l'yéti"},
+      suivi : {text : "L'yéti t'poursuit"}
     }
   },
   français : {
@@ -156,12 +156,13 @@ const monsterTextList = {
       arrivee : {text : ""},
       attaque : {text : ""},
       fuite : {text : ""},
-      suivi : {text : ""}
+      suivi : {text : ""},
+
     }, fennec : {
       arrivee : {text : ""},
       attaque : {text : ""},
       fuite : {text : ""},
-      suivi : {text : ""}
+      suivi : {text : ""},
     }, troll : {
       arrivee : {text : ""},
       attaque : {text : ""},
@@ -196,6 +197,50 @@ const monsterTextList = {
   }
 }
 
+const locationInfo = {
+  caverne : {
+    monsterList : ["ours","fennec","troll",],
+    backgroundColor: "#795548",
+    chanceModifier: 90,
+  },
+  montagne : {monsterList : ["ours","fennec","troll","yéti"],
+    backgroundColor: "#9e9e9e",
+    chanceModifier: 10,
+  },
+  désert : {monsterList : ["fennec","cactus",],
+    backgroundColor: "#fff9c4",
+    chanceModifier: 80,
+  },
+  forêt : {monsterList : ["ours","troll","zombie",],
+    backgroundColor: "#388e3c",
+    chanceModifier: 100,
+  },
+  plaine : {monsterList : ["fennec","zombie",],
+   backgroundColor: "#dce775",
+   chanceModifier: 95,
+  },
+  ruisseau : {monsterList : ["ours","piranha","zombie",],
+   backgroundColor: "#80deea",
+   chanceModifier: 100,
+  },
+  marécage : {monsterList : ["fantôme","zombie",],
+   backgroundColor: "#00897b",
+   chanceModifier: 70,
+  },
+  ville : {monsterList : ["fantôme","zombie",],
+    backgroundColor: "#90a4ae",
+    chanceModifier: 35,
+  },
+  "plaine étrange" : {monsterList : [],
+    backgroundColor: "#f48fb1",
+    chanceModifier: 5,
+  },
+  toundra : {monsterList : ["ours","troll","yéti"],
+    backgroundColor: "#c5cae9",
+    chanceModifier: 50,
+  },
+}
+
 
 const monsterAtLocationList = {
   caverne : ["ours","fennec","troll",],
@@ -215,5 +260,6 @@ export default{
   monsterList,
   objectList,
   actionList,
+  locationInfo,
 };
 

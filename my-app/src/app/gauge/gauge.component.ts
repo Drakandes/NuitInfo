@@ -14,12 +14,10 @@ export class GaugeComponent implements OnInit {
   }
 
   private getGaugeFullPerc(gaugeType){
-    console.log("Full : " + `${this.stat.gaugeInfo[gaugeType].current / this.stat.gaugeInfo[gaugeType ].max* 100}%`);
     return `${this.stat.gaugeInfo[gaugeType].current / this.stat.gaugeInfo[gaugeType].max* 100}%`
   }
 
   private getGaugeEmptyPerc(gaugeType){
-    console.log("Empty : " + `${(1 - this.stat.gaugeInfo[gaugeType].current / this.stat.gaugeInfo[gaugeType].max) * 100}%`);
     return `${(1 - this.stat.gaugeInfo[gaugeType].current / this.stat.gaugeInfo[gaugeType].max) * 100}%`
   }
 }
