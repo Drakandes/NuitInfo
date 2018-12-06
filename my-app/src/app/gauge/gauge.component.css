@@ -1,0 +1,28 @@
+.gauge-section{
+  position: fixed;
+  width: 200px;
+  height: 400px;
+  right: 50px;
+}
+
+.gauge-box{
+  border: 2px solid #bdbdbd;
+  width: 75px;
+  height: 75px;
+}
+
+.gauge-empty{
+  background-color: #212121;
+  width: 100%;
+  height: 75px;
+}
+
+.gauge-full{
+  background-color: #8bc34a;
+  width: 100%;
+  height: 75px;
+}
+
+.gauge-icon{
+  position: absolute;
+}
