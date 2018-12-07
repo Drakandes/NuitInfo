@@ -8,28 +8,28 @@
       <div class="middle-item-nogrow text-path-option">
         {{path.pathOptions[0][0].toUpperCase() + path.pathOptions[0].slice(1)}}
       </div>
-      <div class="middle-item-nogrow mini-action-box center-vertically tooltip" (click)="path.explorePathOption(0)"> 
+      <a class="middle-item-nogrow mini-action-box center-vertically tooltip modal-trigger" data-target="exploreActionModal" (click)="explorePathOption(0)"> 
         {{stat.language === 'français' ? "S'y aventurer" : "Aweille là, let's go!" }}
         <div class="tooltiptext">
           OH YEAH
         </div>
-      </div>
+      </a>
     </div>
     <div class="top-section flexbox-column-spc-evenly" [style.background-color]="getPathOptionColor(1)">
       <div class="middle-item-nogrow text-path-option">
           {{path.pathOptions[1][0].toUpperCase() + path.pathOptions[1].slice(1)}}
       </div>
-      <div class="middle-item-nogrow mini-action-box center-vertically" (click)="path.explorePathOption(1)">
+      <a class="middle-item-nogrow mini-action-box center-vertically modal-trigger" data-target="exploreActionModal" (click)="explorePathOption(1)">
         {{stat.language === 'français' ? "S'y aventurer" : "Aweille là, let's go!" }}
-      </div>
+      </a>
     </div>
     <div class="top-section flexbox-column-spc-evenly" [style.background-color]="getPathOptionColor(2)">
       <div class="middle-item-nogrow text-path-option">
           {{path.pathOptions[2][0].toUpperCase() + path.pathOptions[2].slice(1)}}
       </div>
-      <div class="middle-item-nogrow mini-action-box center-vertically" (click)="path.explorePathOption(2)">
+      <a class="middle-item-nogrow mini-action-box center-vertically modal-trigger" data-target="exploreActionModal" (click)="explorePathOption(2)">
         {{stat.language === 'français' ? "S'y aventurer" : "Aweille là, let's go!" }}
-      </div>
+      </a>
     </div>
   </div>
   <!-- Section du bas -->
@@ -39,5 +39,11 @@
         {{action[0].toUpperCase() + action.slice(1)}}
       </div>
     </div>
+  </div>
+</div>
+
+<div id="exploreActionModal" class="modal" materialize="modal" style="width: 700px">
+  <div class="modal-content">
+    asdshdjska
   </div>
 </div>
