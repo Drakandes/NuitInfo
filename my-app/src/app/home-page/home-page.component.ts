@@ -1,7 +1,7 @@
 import { Component, OnInit, EventEmitter } from '@angular/core';
 import { PathExplorationService } from '../path-exploration.service'
 import { PlayerStatService } from '../player-stat.service'
-import { MaterializeAction } from "angular2-materialize";
+import { MaterializeModule } from "ngx-materialize";
 
 
 @Component({
@@ -12,7 +12,8 @@ import { MaterializeAction } from "angular2-materialize";
 
 export class HomePageComponent implements OnInit {
 
-  private 
+  private show =false
+  private fadeIn = false
 
   constructor(private path: PathExplorationService, private stat: PlayerStatService) {
   }
@@ -30,6 +31,16 @@ export class HomePageComponent implements OnInit {
   }
 
   private explorePathOption(pathOptionIndex){
+    console.log("clicked");
+    this.show = true
+    this.fadeIn = true
     const stringExplorationInfo = this.path.explorePathOption(pathOptionIndex)
+  }
+
+  private onModalClose(){
+    this.fadeIn = false
+    setTimeout(() => {
+      this.show = false
+    }, 500);
   }
 }

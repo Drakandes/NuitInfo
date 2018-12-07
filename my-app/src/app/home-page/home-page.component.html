@@ -1,6 +1,6 @@
 <app-nav-header></app-nav-header>
 
-<div class="col s12 home-page-box flexbox-column-spc-evenly">
+<div class="home-page-box flexbox-column-spc-evenly">
   <app-gauge></app-gauge>
   <!-- Section du haut -->
   <div class="middle-item path-sections flexbox-row-spc-evenly">
@@ -8,28 +8,28 @@
       <div class="middle-item-nogrow text-path-option">
         {{path.pathOptions[0][0].toUpperCase() + path.pathOptions[0].slice(1)}}
       </div>
-      <a class="middle-item-nogrow mini-action-box center-vertically tooltip modal-trigger" data-target="exploreActionModal" (click)="explorePathOption(0)"> 
+      <div class="middle-item-nogrow mini-action-box center-vertically tooltip"(click)="explorePathOption(0)"> 
         {{stat.language === 'français' ? "S'y aventurer" : "Aweille là, let's go!" }}
         <div class="tooltiptext">
           OH YEAH
         </div>
-      </a>
+      </div>
     </div>
     <div class="top-section flexbox-column-spc-evenly" [style.background-color]="getPathOptionColor(1)">
       <div class="middle-item-nogrow text-path-option">
           {{path.pathOptions[1][0].toUpperCase() + path.pathOptions[1].slice(1)}}
       </div>
-      <a class="middle-item-nogrow mini-action-box center-vertically modal-trigger" data-target="exploreActionModal" (click)="explorePathOption(1)">
+      <div class="middle-item-nogrow mini-action-box center-vertically"(click)="explorePathOption(1)">
         {{stat.language === 'français' ? "S'y aventurer" : "Aweille là, let's go!" }}
-      </a>
+      </div>
     </div>
     <div class="top-section flexbox-column-spc-evenly" [style.background-color]="getPathOptionColor(2)">
       <div class="middle-item-nogrow text-path-option">
           {{path.pathOptions[2][0].toUpperCase() + path.pathOptions[2].slice(1)}}
       </div>
-      <a class="middle-item-nogrow mini-action-box center-vertically modal-trigger" data-target="exploreActionModal" (click)="explorePathOption(2)">
+      <div class="middle-item-nogrow mini-action-box center-vertically"(click)="explorePathOption(2)">
         {{stat.language === 'français' ? "S'y aventurer" : "Aweille là, let's go!" }}
-      </a>
+      </div>
     </div>
   </div>
   <!-- Section du bas -->
@@ -42,8 +42,14 @@
   </div>
 </div>
 
-<div id="exploreActionModal" class="modal" materialize="modal" style="width: 700px">
-  <div class="modal-content">
-    asdshdjska
+<div [class.show-cover]="fadeIn" class="hide-cover"> 
+  <div *ngIf="show" class="cover" (click)="onModalClose()">
   </div>
 </div>
+
+<div [class.fixed-modal-card]="fadeIn" class="start-modal-card">
+    <div *ngIf="show" class="card overlay-card">
+      <div class="flexbox-column-spc-evenly center-item">
+      </div>
+    </div>
+  </div>
