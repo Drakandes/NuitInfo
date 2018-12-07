@@ -7,6 +7,7 @@ export class PlayerStatService {
 
   public language = 'français'
   public gaugeList = ['health', 'sleep', 'hunger']
+  public score = 0
 
   public gaugeInfo = {
     health: {
@@ -52,6 +53,7 @@ export class PlayerStatService {
 
   public sleepBonus(bonus){
     this.gaugeInfo.sleep.current += bonus;
+    this.score += 3*bonus;
     if(this.gaugeInfo.sleep.current > this.gaugeInfo.sleep.max){
       this.gaugeInfo.sleep.current = this.gaugeInfo.sleep.max
     }
@@ -59,6 +61,7 @@ export class PlayerStatService {
 
   public hungerBonus(bonus){
     this.gaugeInfo.hunger.current += bonus;
+    this.score += 3*bonus;
     if(this.gaugeInfo.hunger.current > this.gaugeInfo.hunger.max){
       this.gaugeInfo.hunger.current = this.gaugeInfo.hunger.max
     }
@@ -66,6 +69,7 @@ export class PlayerStatService {
 
   public healthBonus(bonus){
     this.gaugeInfo.health.current += bonus;
+    this.score += 3*bonus;
     if(this.gaugeInfo.health.current > this.gaugeInfo.health.max){
       this.gaugeInfo.health.current = this.gaugeInfo.health.max
     }

@@ -18,7 +18,7 @@ const actionTextList = {
           ville : {text: "Tu t'endors pis t'es ben",},
           "plaine étrange" : {text: "Tu t'endors...",},
           toundra : {text: "Tu t'endors pis y fait fretttttteeeeee!",},
-          reussite: {text : " "},
+          reussite: {text : "Tu dors comme un bébé"},
           echec: {text: ""}
         },
         manger : {
