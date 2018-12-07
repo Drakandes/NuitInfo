@@ -217,7 +217,11 @@ const locationInfo = {
     },
     français : {
       arrivee : {text : "Tu entres dans la caverne"}
-    }
+    },
+    chanceSleeping : 50,
+    chanceEating : 50,
+    chanceFinding : 50,
+    chanceRunning : 50,
   },
   montagne : {
     monsterList : ["ours","fennec","troll","yéti"],
@@ -231,7 +235,11 @@ const locationInfo = {
     },
     français : {
       arrivee : {text : "Tu arrives à la montagne"}
-    }
+    },
+    chanceSleeping : 50,
+    chanceEating : 50,
+    chanceFinding : 50,
+    chanceRunning : 50,
   },
   désert : {
     monsterList : ["fennec","cactus",],
@@ -245,7 +253,11 @@ const locationInfo = {
     },
     français : {
       arrivee : {text : "Tu arrives dans le désert et il fait chaud"}
-    }
+    },
+    chanceSleeping : 50,
+    chanceEating : 50,
+    chanceFinding : 50,
+    chanceRunning : 50,
   },
   forêt : {
     monsterList : ["ours","troll","zombie",],
@@ -259,7 +271,11 @@ const locationInfo = {
     },
     français : {
       arrivee : {text : "Tu entres dans la forêt"}
-    }
+    },
+    chanceSleeping : 50,
+    chanceEating : 50,
+    chanceFinding : 50,
+    chanceRunning : 50,
   },
   plaine : {
     monsterList : ["fennec","zombie",],
@@ -273,7 +289,11 @@ const locationInfo = {
     },
     français : {
       arrivee : {text : "Tu arrives dans la plaine"}
-    }
+    },
+    chanceSleeping : 50,
+    chanceEating : 50,
+    chanceFinding : 50,
+    chanceRunning : 50,
   },
   ruisseau : {
     monsterList : ["ours","piranha","zombie",],
@@ -301,7 +321,11 @@ const locationInfo = {
     },
     français : {
       arrivee : {text : "Tu entres dans le marécage, et ça sent mauvais"}
-    }
+    },
+    chanceSleeping : 50,
+    chanceEating : 50,
+    chanceFinding : 50,
+    chanceRunning : 50,
   },
   ville : {
     monsterList : ["fantôme","zombie",],
@@ -315,7 +339,11 @@ const locationInfo = {
     },
     français : {
       arrivee : {text : "Tu entres dans la ville"}
-    }
+    },
+    chanceSleeping : 50,
+    chanceEating : 50,
+    chanceFinding : 50,
+    chanceRunning : 50,
   },
   "plaine étrange" : {
     monsterList : [],
@@ -329,7 +357,11 @@ const locationInfo = {
     },
     français : {
       arrivee : {text : "Tu arrives dans une plaine... étrange"}
-    }
+    },
+    chanceSleeping : 50,
+    chanceEating : 50,
+    chanceFinding : 50,
+    chanceRunning : 50,
   },
   toundra : {
     monsterList : ["ours","troll","yéti"],
@@ -343,7 +375,11 @@ const locationInfo = {
     },
     français : {
       arrivee : {text : "Tu arrives dans la toundra, et tu as froid"}
-    }
+    },
+    chanceSleeping : 50,
+    chanceEating : 50,
+    chanceFinding : 50,
+    chanceRunning : 50,
   },
 }
 
