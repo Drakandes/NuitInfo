@@ -101,8 +101,6 @@ export class PathExplorationService {
 
     const listString = []
     const random = (Math.random() * (100 - 0)) + 0
-    console.log(random);
-    console.log(actionChance);
     const reussite = random <= actionChance
     listString.push(info[this.currentLocation].text)
     if(reussite){
@@ -120,9 +118,12 @@ export class PathExplorationService {
     } else{
       if (this.stat.language === "français"){
         listString.push(`Tu n'as rien regagné en ${actionString}!`)
+        listString.push(`Tu as pris ${10} point(s) de dégât!`)
       }else{
-        listString.push(`T'as récupéré en ${actionString}!`)
+        listString.push(`T'as rien récupéré en ${actionString}!`)
+        listString.push(`T'as pris ${10} point(s) de dégât!`)
       }
+      this.stat.healthMinus(10)
     }
     listString.push(`À toi de choisir ce que tu vas faire maintenant comme action!`)
     return listString
