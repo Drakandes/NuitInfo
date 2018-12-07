@@ -58,14 +58,28 @@ export class PathExplorationService {
   public explorePathOption(pathOptionIndex) {
     const info = this.pathOptionsInfo[pathOptionIndex]
     const listString = []
-    listString.push(info[this.stat.language].arrivee.text)
-    listString.push(`Tu as pris ${info.healthMinus} point(s) de dégât!`)
-    listString.push(`Tu es ${info.sleepMinus}% plus fatigué!`)
-    listString.push(`Ta faim a augmenté de ${info.hungerMinus}%!`)
-    this.stat.hungerMinus(info.hungerMinus)
-    this.stat.sleepMinus(info.sleepMinus)
-    this.stat.healthMinus(info.healthMinus)
-    listString.push(`À toi de choisir ce que tu vas faire maintenant comme action!`)
+    if (this.stat.language === "français")
+    {
+      listString.push(info[this.stat.language].arrivee.text)
+      listString.push(`Tu as pris ${info.healthMinus} point(s) de dégât!`)
+      listString.push(`Tu es ${info.sleepMinus}% plus fatigué!`)
+      listString.push(`Ta faim a augmenté de ${info.hungerMinus}%!`)
+      this.stat.hungerMinus(info.hungerMinus)
+      this.stat.sleepMinus(info.sleepMinus)
+      this.stat.healthMinus(info.healthMinus)
+      listString.push(`À toi de choisir ce que tu vas faire maintenant comme action!`)
+    }
+    else
+    {
+      listString.push(info[this.stat.language].arrivee.text)
+      listString.push(`T'as pris ${info.healthMinus} point(s) de dégât!`)
+      listString.push(`T'es ${info.sleepMinus}% plus fatigué!`)
+      listString.push(`Ta faim a augmenté de ${info.hungerMinus}%!`)
+      this.stat.hungerMinus(info.hungerMinus)
+      this.stat.sleepMinus(info.sleepMinus)
+      this.stat.healthMinus(info.healthMinus)
+      listString.push(`Maintenant aweille choisi c'que tu vas faire!`)
+    }
     return listString
   }
 }
