@@ -74,7 +74,7 @@ const actionTextList = {
       toundra : {text: "Tu t'endors en grelottant",},
     },
     manger : {
-      tooltiptext : "Tu mange pour remplir ta panse",
+      tooltiptext : "Tu manges pour remplir ta panse",
       caverne : {text: "Tu trouves des trucs tout moisis",},
       montagne : {text: "Tu ne trouves pratiquement que des cailloux",},
       désert : {text: "Tu ne trouves pratiquement que du sable",},
@@ -123,8 +123,8 @@ const actionTextList = {
       quebecois : "poutine.jpeg"
     },
     fuir : {
-      français : "fuite.jpeg",
-      quebecois : "fuite.jpeg"
+      français : "fuite.png",
+      quebecois : "fuite.png"
     }
   }
 }

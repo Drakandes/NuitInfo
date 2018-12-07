@@ -9,7 +9,7 @@ import { PlayerStatService } from '../player-stat.service'
 })
 export class MonsterComponent implements OnInit {
 
-  constructor(private path: PathExplorationService, private stat: PlayerStatService) { }
+  constructor(public path: PathExplorationService, public stat: PlayerStatService) { }
 
   ngOnInit() {
   }

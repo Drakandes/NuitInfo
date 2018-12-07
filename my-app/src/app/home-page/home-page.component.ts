@@ -10,44 +10,47 @@ import { PlayerStatService } from '../player-stat.service'
 
 export class HomePageComponent implements OnInit {
 
-  private show =false
-  private fadeIn = false
-  private actionResults = []
+  public show =false
+  public fadeIn = false
+  public actionResults = []
 
-  constructor(private path: PathExplorationService, private stat: PlayerStatService) {
+  constructor(public path: PathExplorationService, public stat: PlayerStatService) {
   }
 
   ngOnInit() {
     this.path.initExplorationService()
   }
 
-  private getPathOptionColor(pathOptionIndex){
+  public getPathOptionColor(pathOptionIndex){
     return this.path.pathOptionsInfo[pathOptionIndex].backgroundColor
   }
 
-  private getPathOptionImage(pathOptionIndex){
+  public getPathOptionImage(pathOptionIndex){
     const name = this.path.pathOptionsInfo[pathOptionIndex].image
     return `url(bg-img/${name})`
   }
 
-  private getPathOptionName(pathOptionIndex){
+  public getPathOptionName(pathOptionIndex){
     return this.path.pathOptionsInfo[pathOptionIndex].backgroundColor
   }
 
-  private explorePathOption(pathOptionIndex){
+  public explorePathOption(pathOptionIndex){
     this.show = true
     this.fadeIn = true
     this.actionResults = this.path.explorePathOption(pathOptionIndex)
     this.path.updatePathOptions()
   }
 
-  private doAction(actionType){
+  public doAction(actionType){
     this.show = true
     this.fadeIn = true
-    this.actionResults = this.path.doAction(actionType)
+    if (this.stat.gaugeInfo.health.current <= 0)
+      this.actionResults = ["Tu es mort !"]
+    else
+      this.actionResults = this.path.doAction(actionType)
   }
 
-  private onModalClose(){
+  public onModalClose(){
     this.fadeIn = false
     setTimeout(() => {
       this.show = false
@@ -55,7 +58,7 @@ export class HomePageComponent implements OnInit {
     this.actionResults = []
   }
 
-  private getActionValid(action){
+  public getActionValid(action){
     if((action === 'manger' || action === 'dormir') && this.path.hasMonster) return false
     if(action === 'fuir' && !this.path.hasMonster) return false
     if(action === 'explorer') return false

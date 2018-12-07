@@ -9,11 +9,11 @@ import { PlayerStatService } from '../player-stat.service';
 })
 export class NavHeaderComponent implements OnInit {
 
-  private darkmodeRange = 100
+  public darkmodeRange = 100
 
-  constructor(private darkmode: DarkModeService, private stat: PlayerStatService) { }
+  constructor(public darkmode: DarkModeService, public stat: PlayerStatService) { }
 
-  private changeLanguage(){
+  public changeLanguage(){
     if (this.stat.language === "français")
     {
       this.stat.language = "quebecois"

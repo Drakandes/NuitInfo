@@ -32,8 +32,8 @@
   </div>
   <!-- Section du bas -->
   <div class="middle-item action-sections flexbox-row-spc-evenly">
-    <div class="center-item bottom-section flexbox-row-spc-evenly" *ngFor="let action of path.explorationData.actionList; let actionIndex = index" [style.backgroundSize]="'cover'"
-	   [style.backgroundImage]="'url(bg-img/' + path.explorationData.actionTextList.image[action][stat.language] + ')'">
+    <div class="center-item bottom-section" [style.position]="'relative'" *ngFor="let action of path.explorationData.actionList; let actionIndex = index"
+	 [style.backgroundSize]="'cover'" [style.backgroundImage]="'url(bg-img/' + path.explorationData.actionTextList.image[action][stat.language] + ')'">
       <div class="action-box center-item tooltip flexbox-row-spc-evenly" (click)="doAction(action)" *ngIf="getActionValid(action)">
         {{action[0].toUpperCase() + action.slice(1)}}
         <div class="tooltiptext">

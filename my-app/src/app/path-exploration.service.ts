@@ -63,6 +63,8 @@ export class PathExplorationService {
   public explorePathOption(pathOptionIndex) {
     const info = this.pathOptionsInfo[pathOptionIndex]
     const listString = []
+    if (this.stat.gaugeInfo.health.current <= 0)
+      return ["Tu es mort !"]
     if (this.stat.language === "français")
     {
       listString.push(info[this.stat.language].arrivee.text)

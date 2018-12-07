@@ -8,16 +8,16 @@ import { PlayerStatService } from '../player-stat.service'
 })
 export class GaugeComponent implements OnInit {
 
-  constructor(private stat: PlayerStatService) { }
+  constructor(public stat: PlayerStatService) { }
 
   ngOnInit() {
   }
 
-  private getGaugeFullPerc(gaugeType){
+  public getGaugeFullPerc(gaugeType){
     return `${this.stat.gaugeInfo[gaugeType].current / this.stat.gaugeInfo[gaugeType].max* 100}%`
   }
 
-  private getGaugeEmptyPerc(gaugeType){
+  public getGaugeEmptyPerc(gaugeType){
     return `${(1 - this.stat.gaugeInfo[gaugeType].current / this.stat.gaugeInfo[gaugeType].max) * 100}%`
   }
 }
