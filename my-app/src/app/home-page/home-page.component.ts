@@ -13,6 +13,7 @@ export class HomePageComponent implements OnInit {
 
   private show =false
   private fadeIn = false
+  private actionResults = []
 
   constructor(private path: PathExplorationService, private stat: PlayerStatService) {
   }
@@ -30,10 +31,10 @@ export class HomePageComponent implements OnInit {
   }
 
   private explorePathOption(pathOptionIndex){
-    console.log("clicked");
     this.show = true
     this.fadeIn = true
-    const stringExplorationInfo = this.path.explorePathOption(pathOptionIndex)
+    this.actionResults = this.path.explorePathOption(pathOptionIndex)
+    this.path.updatePathOptions()
   }
 
   private onModalClose(){
@@ -41,5 +42,6 @@ export class HomePageComponent implements OnInit {
     setTimeout(() => {
       this.show = false
     }, 500);
+    this.actionResults = []
   }
 }

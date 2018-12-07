@@ -114,19 +114,25 @@
 
 .start-modal-card{
     position: fixed;
-    right: -25%;
-    top: 0%;
-    width: 25%;
-    height: 30%;
+    right: 12.5%;
+    top: -40%;
+    width: 75%;
+    height: 80%;
     opacity: 0;
     transition: 500ms ease-out all;
 }
   
 .fixed-modal-card{
     position: fixed;
-    right: 2.5%;
-    top: 7.5%;
-    width: 25%;
-    height: 30%;
+    right: 12.5%;
+    top: 10%;
+    width: 75%;
+    height: 80%;
     opacity: 1;
+}
+
+.result{
+    font-size: 16pt;
+    font-weight: bold;
+    margin-top: 30px;
 }

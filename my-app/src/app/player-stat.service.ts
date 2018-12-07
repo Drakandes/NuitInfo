@@ -27,8 +27,17 @@ export class PlayerStatService {
   }
 
   constructor() { 
-    setInterval(() => {
-      this.gaugeInfo.health.current--
-    }, 500)
+  }
+
+  public sleepMinus(minus){
+    this.gaugeInfo.sleep.current--;
+  }
+
+  public hungerMinus(minus){
+    this.gaugeInfo.hunger.current--;
+  }
+
+  public healthMinus(minus){
+    this.gaugeInfo.health.current--;
   }
 }
