@@ -1,7 +1,15 @@
 <div class="nav-header-box" [ngClass]="{'nav-header-box-darkmode' : darkmode.isDarkmode}">
-  <div class="col s12 offset-s2 nav-header-title valign-wrapper">
-    <div >
+  <div class="nav-header-title flexbox-row-start center-vertically">
+    <div class = "first-item">
       Nuit de l'info
+    </div>
+    <div class="switch last-item-nogrow">
+      <label>
+        Français
+        <input type="checkbox" (click)="changeLanguage()">
+        <span class="lever"></span>
+        Québecois
+      </label>
     </div>
     <i *ngIf="darkmode.isDarkmode" (click)="darkmode.toggleDarkmode()" class="material-icons last-item darkmode-icon">brightness_5</i>
     <i *ngIf="!darkmode.isDarkmode" (click)="darkmode.toggleDarkmode()" class="material-icons last-item darkmode-icon">brightness_2</i>
