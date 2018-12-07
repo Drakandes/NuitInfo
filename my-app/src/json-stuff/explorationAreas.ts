@@ -18,11 +18,9 @@ const actionTextList = {
           ville : {text: "Tu t'endors pis t'es ben",},
           "plaine étrange" : {text: "Tu t'endors...",},
           toundra : {text: "Tu t'endors pis y fait fretttttteeeeee!",},
-          reussite: {text : "Tu dors comme un bébé"},
-          echec: {text: ""}
         },
         manger : {
-          tooltiptext : "Tu bouffes jusqu'à être bourré",
+          tooltiptext : "Tu bouffes pour remplir ton bedon",
           caverne : {text: "Tu trouves des choses pas mal moisies",},
           montagne : {text: "Tu trouves presque inque des roches",},
           désert : {text: "Tu trouves presque inque du sable",},
@@ -33,8 +31,6 @@ const actionTextList = {
           ville : {text: "Tu achètes de la bouffe à un marchand",},
           "plaine étrange" : {text: "Tu trouves de la bouffe ... étrange",},
           toundra : {text: "Tu trouves des choses gelés",},
-          reussite: {text : " "},
-          echec: {text: ""}
         },
         explorer : {
           tooltiptext : "T'explores pour trouver de quoi de pas pire",
@@ -48,8 +44,6 @@ const actionTextList = {
           ville : {text: "Tu marches, ben safe",},
           "plaine étrange" : {text: "Tu explores l'endroit étrange",},
           toundra : {text: "Tu fais un bonhomme de neige",},
-          reussite: {text : " "},
-          echec: {text: ""}
         },
         fuir : {
           tooltiptext : "Tu dégages en vitesse à cause du danger",
@@ -63,8 +57,6 @@ const actionTextList = {
           ville : {text: "Tu dégages de la ville",},
           "plaine étrange" : {text: "Tu dégages dans une ambiance étrange",},
           toundra : {text: "Tu dégages en crissant des dents",},
-          reussite: {text : " "},
-          echec: {text: ""}
         }
     },
     français : {
@@ -80,8 +72,6 @@ const actionTextList = {
           ville : {text: "Tu t'endors confortablement",},
           "plaine étrange" : {text: "Tu t'endors...",},
           toundra : {text: "Tu t'endors en grelottant",},
-          reussite: {text : " "},
-          echec: {text: ""}
         },
         manger : {
           tooltiptext : "Tu mange pour remplir ta panse",
@@ -95,8 +85,6 @@ const actionTextList = {
           ville : {text: "Tu achètes à manger chez un marchand",},
           "plaine étrange" : {text: "Tu trouves de la nourriture... étrange",},
           toundra : {text: "Tu trouves des trucs gelés",},
-          reussite: {text : " "},
-          echec: {text: ""}
         },
         explorer : {
           tooltiptext : "Tu explore les environs",
@@ -110,8 +98,6 @@ const actionTextList = {
           ville : {text: "Tu marches, en toute sécurité",},
           "plaine étrange" : {text: "Tu explore cet étrange endroit",},
           toundra : {text: "Tu fais un bonhome de neige"},
-          reussite: {text : " "},
-          echec: {text: ""}
         },
         fuir : {
           tooltiptext : "Tu fuis le danger",
@@ -125,8 +111,6 @@ const actionTextList = {
           ville : {text: "Tu décampes de la ville"},
           "plaine étrange" : {text: "Tu décampes dans une étrange atmosphère"},
           toundra : {text: "Tu décampes gelé jusqu'aux os"},
-          reussite: {text : " "},
-          echec: {text: ""}
         }
     }
 }
