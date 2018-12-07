@@ -163,21 +163,21 @@ export class PathExplorationService {
     } else{
       if(reussite){
         if (this.stat.language === "français"){
-          listString.push(`Tu as regagné ${5}% de vie!`)
+          listString.push(`Tu as regagné ${15}% de vie!`)
         }else{
-          listString.push(`T'as récupéré ${5}% de vie!`)
+          listString.push(`T'as récupéré ${15}% de vie!`)
         }
         this.hasMonster = false
         listString.push(this.explorationData.monsterTextList[this.stat.language][this.monsterName].fuite.text)
-        this.stat.healthBonus(5)
+        this.stat.healthBonus(15)
       } else{
         if (this.stat.language === "français"){
-          listString.push(`Tu as pris ${15} point(s) de dégât!`)
+          listString.push(`Tu as pris ${5} point(s) de dégât!`)
         }else{
-          listString.push(`T'as pris ${15} point(s) de dégât!`)
+          listString.push(`T'as pris ${5} point(s) de dégât!`)
         }
         listString.push(this.explorationData.monsterTextList[this.stat.language][this.monsterName].attaque.text)
-        this.stat.healthMinus(15)
+        this.stat.healthMinus(5)
       }
     }
     listString.push(`À toi de choisir ce que tu vas faire maintenant comme action!`)
