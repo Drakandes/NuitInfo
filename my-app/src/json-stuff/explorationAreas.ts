@@ -7,6 +7,7 @@ const actionList = ["dormir", "manger", "explorer", "fuir"];
 const actionTextList = {
     quebecois : {
         dormir : {
+          tooltiptext : "Tu fais un power nap pour t'remettre sur le piton",
           caverne : {text: "Tu t'endors dans une caverne ben weat",},
           montagne : {text: "Tu t'endors full essoufler",},
           désert : {text: "Tu t'endors pis y fait frette",},
@@ -19,6 +20,7 @@ const actionTextList = {
           toundra : {text: "Tu t'endors pis y fait fretttttteeeeee!",},
         },
         manger : {
+          tooltiptext : "Tu bouffes pour pour t'remettre sur le piton",
           caverne : {text: "Tu trouves des choses pas mal moisies",},
           montagne : {text: "Tu trouves presque inque des roches",},
           désert : {text: "Tu trouves presque inque du sable",},
@@ -31,6 +33,7 @@ const actionTextList = {
           toundra : {text: "Tu trouves des choses gelés",},
         },
         explorer : {
+          tooltiptext : "T'explores pour trouver de quoi de pas pire",
           caverne : {text: "Tu explores les recoins",},
           montagne : {text: "Tu vires autour des roches",},
           désert : {text: "Tu tasses du sable",},
@@ -43,6 +46,7 @@ const actionTextList = {
           toundra : {text: "Tu fais un bonhomme de neige",},
         },
         fuir : {
+          tooltiptext : "Tu dégages en vitesse",
           caverne : {text: "Tu dégages d'la caverne",},
           montagne : {text: "Tu dégages pis tu t'essoufles",},
           désert : {text: "Tu dégages pis tu sues",},
@@ -208,7 +212,7 @@ const locationInfo = {
       arrivee : {text : "T'arrives dans une caverne"}
     },
     français : {
-      arrivee : {text : ""}
+      arrivee : {text : "Tu entres dans la caverne"}
     }
   },
   montagne : {
@@ -222,7 +226,7 @@ const locationInfo = {
       arrivee : {text : "T'arrives à la montagne"}
     },
     français : {
-      arrivee : {text : ""}
+      arrivee : {text : "Tu arrives à la montagne"}
     }
   },
   désert : {
@@ -236,7 +240,7 @@ const locationInfo = {
       arrivee : {text : "T'arrives dans l'désert pis y fait chaud"}
     },
     français : {
-      arrivee : {text : ""}
+      arrivee : {text : "Tu arrives dans le désert et il fait chaud"}
     }
   },
   forêt : {
@@ -250,7 +254,7 @@ const locationInfo = {
       arrivee : {text : "T'arrives en forêt"}
     },
     français : {
-      arrivee : {text : ""}
+      arrivee : {text : "Tu entres dans la forêt"}
     }
   },
   plaine : {
@@ -264,7 +268,7 @@ const locationInfo = {
      arrivee : {text : "T'arrives dans la plaine"}
     },
     français : {
-      arrivee : {text : ""}
+      arrivee : {text : "Tu arrives dans la plaine"}
     }
   },
   ruisseau : {
@@ -278,7 +282,7 @@ const locationInfo = {
      arrivee : {text : "T'arrives au ruisseau"}
     },
     français : {
-      arrivee : {text : ""}
+      arrivee : {text : "Tu arrives au ruisseau"}
     }
   },
   marécage : {
@@ -292,7 +296,7 @@ const locationInfo = {
       arrivee : {text : "T'arrives au marécage, pis ça pue"}
     },
     français : {
-      arrivee : {text : ""}
+      arrivee : {text : "Tu entres dans le marécage, et ça sent mauvais"}
     }
   },
   ville : {
@@ -306,7 +310,7 @@ const locationInfo = {
       arrivee : {text : "T'arrives en ville"}
     },
     français : {
-      arrivee : {text : ""}
+      arrivee : {text : "Tu entres dans la ville"}
     }
   },
   "plaine étrange" : {
@@ -320,7 +324,7 @@ const locationInfo = {
       arrivee : {text : "T'arrives dans une plaine ... étrange"}
     },
     français : {
-      arrivee : {text : ""}
+      arrivee : {text : "Tu arrives dans une plaine... étrange"}
     }
   },
   toundra : {
@@ -334,7 +338,7 @@ const locationInfo = {
       arrivee : {text : "T'arrives dans la toundra et y fait frette!"}
     },
     français : {
-      arrivee : {text : ""}
+      arrivee : {text : "Tu arrives dans la toundra, et tu as froid"}
     }
   },
 }
@@ -355,16 +359,16 @@ const objectInfo = {
       }
     },
     français : {
-      récupérer : {text : ""},
+      récupérer : {text : "Tu récupères une poêle"},
       utiliser : {
-        ours : { text : ""}, 
-        fennec : { text : "" }, 
-        troll : { text : ""}, 
-        piranha : { text : ""} , 
-        fantôme : { text : ""}, 
-        cactus : { text : ""}, 
-        zombie : { text : ""}, 
-        yéti : { text : ""}
+        ours : { text : "Tu balances la poêle et tu cognes l'ours en plein visage"}, 
+        fennec : { text : "Tu balances la poêle et tu cognes le fennec en plein visage" }, 
+        troll : { text : "Tu balances la poêle et tu cognes le troll en plein visage"}, 
+        piranha : { text : "Tu balances la poêle et plouf ton attaque tombe à l'eau"} , 
+        fantôme : { text : "Tu balances la poêle et ... rien"}, 
+        cactus : { text : "Tu balances la poêle et tu cognes le cactus en plein visage"}, 
+        zombie : { text : "Tu balances la poêle et tu cognes le zombie en pleine face"}, 
+        yéti : { text : "Tu balances la poêle et tu cognes le yéti en plein visage"}
       }
     }
   }, 
@@ -383,16 +387,16 @@ const objectInfo = {
       }
     },
     français : {
-      récupérer : {text : ""},
+      récupérer : {text : "Tu ramasses une pierre"},
       utiliser : {
-        ours : { text : ""}, 
-        fennec : { text : "" }, 
-        troll : { text : ""}, 
-        piranha : { text : ""} , 
-        fantôme : { text : ""}, 
-        cactus : { text : ""}, 
-        zombie : { text : ""}, 
-        yéti : { text : ""}
+        ours : { text : "Tu jettes la pierre et tu cognes l'ours en plein visage"}, 
+        fennec : { text : "Tu jettes la pierre et tu cognes le fennec en plein visage" }, 
+        troll : { text : "Tu jettes la pierre et tu cognes le troll en plein visage"}, 
+        piranha : { text : "Tu jettes la pierre et plouf ton attaque tombe à l'eau"} , 
+        fantôme : { text : "Tu jettes la pierre et ... rien"}, 
+        cactus : { text : "Tu jettes la pierre et tu cognes le cactus en plein visage"}, 
+        zombie : { text : "Tu jettes la pierre et tu cognes le zombie en plein visage"}, 
+        yéti : { text : "Tu jettes la pierre et tu cognes le yéti en plein visage"}
       }
     }
   }, 
