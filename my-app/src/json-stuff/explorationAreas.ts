@@ -208,7 +208,7 @@ const locationInfo = {
   caverne : {
     monsterList : ["ours","fennec","troll",],
     backgroundColor: "#795548",
-    chanceMonster: 20,
+    chanceMonster: 60,
     chanceModifier: 90,
     healthMinus: 10,
     sleepMinus: 5,
@@ -227,7 +227,7 @@ const locationInfo = {
   montagne : {
     monsterList : ["ours","fennec","troll","yéti"],
     backgroundColor: "#9e9e9e",
-    chanceMonster: 20,
+    chanceMonster: 50,
     chanceModifier: 10,
     healthMinus: 0,
     sleepMinus: 20,
@@ -246,7 +246,7 @@ const locationInfo = {
   désert : {
     monsterList : ["fennec","cactus",],
     backgroundColor: "#fff9c4",
-    chanceMonster: 20,
+    chanceMonster: 70,
     chanceModifier: 80,
     healthMinus: 0,
     sleepMinus: 15,
@@ -265,7 +265,7 @@ const locationInfo = {
   forêt : {
     monsterList : ["ours","troll","zombie",],
     backgroundColor: "#388e3c",
-    chanceMonster: 20,
+    chanceMonster: 50,
     chanceModifier: 100,
     healthMinus: 10,
     sleepMinus: 5,
@@ -284,7 +284,7 @@ const locationInfo = {
   plaine : {
     monsterList : ["fennec","zombie",],
     backgroundColor: "#dce775",
-    chanceMonster: 20,
+    chanceMonster: 30,
     chanceModifier: 95,
     healthMinus: 5,
     sleepMinus: 10,
@@ -303,7 +303,7 @@ const locationInfo = {
   ruisseau : {
     monsterList : ["ours","piranha","zombie",],
     backgroundColor: "#80deea",
-    chanceMonster: 20,
+    chanceMonster: 50,
     chanceModifier: 100,
     healthMinus: 0,
     sleepMinus: 5,
@@ -322,7 +322,7 @@ const locationInfo = {
   marécage : {
     monsterList : ["fantôme","zombie",],
     backgroundColor: "#00897b",
-    chanceMonster: 20,
+    chanceMonster: 50,
     chanceModifier: 70,
     healthMinus: 5,
     sleepMinus: 10,
@@ -341,7 +341,7 @@ const locationInfo = {
   ville : {
     monsterList : ["fantôme","zombie",],
     backgroundColor: "#90a4ae",
-    chanceMonster: 20,
+    chanceMonster: 30,
     chanceModifier: 35,
     healthMinus: 10,
     sleepMinus: 5,
@@ -360,7 +360,7 @@ const locationInfo = {
   "plaine étrange" : {
     monsterList : [],
     backgroundColor: "#f48fb1",
-    chanceMonster: 20,
+    chanceMonster: 50,
     chanceModifier: 5,
     healthMinus: 0,
     sleepMinus: 0,
@@ -379,7 +379,7 @@ const locationInfo = {
   toundra : {
     monsterList : ["ours","troll","yéti"],
     backgroundColor: "#c5cae9",
-    chanceMonster: 20,
+    chanceMonster: 70,
     chanceModifier: 50,
     healthMinus: 5,
     sleepMinus: 15,
