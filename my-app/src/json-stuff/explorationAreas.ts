@@ -1,7 +1,7 @@
 const areaList = ["carverne", "montagne", "désert", "forêt", "plaine", "ruisseau", "marécage", "ville", "plaine étrange", "toundra"];
 const monsterList = ["ours", "fennec", "troll",, "piranha", "fantôme", "cactus", "zombie", "yéti"];
 const objectList = ["poêle", "roche", "hameçon", "poisson", "huile", "lampe", "pelle", "VIPI"];
-const actionList = ["dormir", "manger", "explorer", "fuir"];
+const actionList = ["dormir", "manger","fuir"];
 
 // Action
 const actionTextList = {
