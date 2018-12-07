@@ -1,7 +1,6 @@
 import { Component, OnInit, EventEmitter } from '@angular/core';
 import { PathExplorationService } from '../path-exploration.service'
 import { PlayerStatService } from '../player-stat.service'
-import { MaterializeAction } from "angular2-materialize";
 
 
 @Component({

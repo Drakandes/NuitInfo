@@ -588,6 +588,7 @@ const monsterAtLocationList = {
 }
 
 export default{
+  actionTextList,
   areaList,
   monsterList,
   objectList,
