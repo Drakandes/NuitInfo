@@ -2,7 +2,6 @@ import { Component, OnInit, EventEmitter } from '@angular/core';
 import { PathExplorationService } from '../path-exploration.service'
 import { PlayerStatService } from '../player-stat.service'
 
-
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
@@ -49,5 +48,12 @@ export class HomePageComponent implements OnInit {
       this.show = false
     }, 500);
     this.actionResults = []
+  }
+
+  private getActionValid(action){
+    if((action === 'manger' || action === 'dormir') && this.path.hasMonster) return false
+    if(action === 'fuir' && !this.path.hasMonster) return false
+    if(action === 'explorer') return false
+    return true
   }
 }

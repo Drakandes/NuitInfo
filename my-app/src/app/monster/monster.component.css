@@ -1,0 +1,16 @@
+.monster-section{
+  position: fixed;
+  left: 30px;
+  top: -350px;
+}
+
+.monster-box{
+  border: 2px solid #bdbdbd;
+  width: 350px;
+  height: 75px;
+  background-color: #ff5252;
+}
+
+.gauge-icon{
+  position: absolute;
+}

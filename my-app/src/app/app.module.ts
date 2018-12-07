@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NavHeaderComponent } from './nav-header/nav-header.component';
 import { GaugeComponent } from './gauge/gauge.component';
+import { MonsterComponent } from './monster/monster.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     NavHeaderComponent,
-    GaugeComponent
+    GaugeComponent,
+    MonsterComponent
   ],
   imports: [
     BrowserModule,
