@@ -20,7 +20,7 @@ const actionTextList = {
           toundra : {text: "Tu t'endors pis y fait fretttttteeeeee!",},
         },
         manger : {
-          tooltiptext : "Tu bouffes pour pour t'remettre sur le piton",
+          tooltiptext : "Tu bouffes jusqu'à être bourré",
           caverne : {text: "Tu trouves des choses pas mal moisies",},
           montagne : {text: "Tu trouves presque inque des roches",},
           désert : {text: "Tu trouves presque inque du sable",},
@@ -46,7 +46,7 @@ const actionTextList = {
           toundra : {text: "Tu fais un bonhomme de neige",},
         },
         fuir : {
-          tooltiptext : "Tu dégages en vitesse",
+          tooltiptext : "Tu dégages en vitesse à cause du danger",
           caverne : {text: "Tu dégages d'la caverne",},
           montagne : {text: "Tu dégages pis tu t'essoufles",},
           désert : {text: "Tu dégages pis tu sues",},
@@ -61,6 +61,7 @@ const actionTextList = {
     },
     français : {
         dormir : {
+          tooltiptext : "Tu dors pour récupérer de l'énergie",
           caverne : {text: "Tu t'endors dans une caverne humide",},
           montagne : {text: "Tu t'endors à bout de souffle",},
           désert : {text: "Tu t'endors dans le froid",},
@@ -73,6 +74,7 @@ const actionTextList = {
           toundra : {text: "Tu t'endors en grelottant",},
         },
         manger : {
+          tooltiptext : "Tu mange pour remplir ta panse",
           caverne : {text: "Tu trouves des trucs tout moisis",},
           montagne : {text: "Tu ne trouves pratiquement que des cailloux",},
           désert : {text: "Tu ne trouves pratiquement que du sable",},
@@ -85,6 +87,7 @@ const actionTextList = {
           toundra : {text: "Tu trouves des trucs gelés",},
         },
         explorer : {
+          tooltiptext : "Tu explore les environs",
           caverne : {text: "Tu explores les environs",},
           montagne : {text: "Tu vadrouilles autour des roches",},
           désert : {text: "Tu creuses dans le sable",},
@@ -97,6 +100,7 @@ const actionTextList = {
           toundra : {text: "Tu fais un bonhome de neige"},
         },
         fuir : {
+          tooltiptext : "Tu fuis le danger",
           caverne : {text: "Tu décampes hors de la caverne",},
           montagne : {text: "Tu décampes en t'essoufflant",},
           désert : {text: "Tu décampes en transpirant",},
@@ -415,16 +419,16 @@ const objectInfo = {
       }
     },
     français : {
-      récupérer : {text : ""},
+      récupérer : {text : "Tu attrapes un hameçon"},
       utiliser : {
-        ours : { text : ""}, 
-        fennec : { text : "" }, 
-        troll : { text : ""}, 
-        piranha : { text : ""} , 
-        fantôme : { text : ""}, 
-        cactus : { text : ""}, 
-        zombie : { text : ""}, 
-        yéti : { text : ""}
+        ours : { text : "Tu jettes l'hameçon et tu l'énerves encore plus..."}, 
+        fennec : { text : "Tu jettes l'hameçon et tu l'énerves encore plus..." }, 
+        troll : { text : "Tu jettes l'hameçon et tu l'énerves encore plus..."}, 
+        piranha : { text : "Tu accroches les piranha au bout de ton hameçon"} , 
+        fantôme : { text : "Tu jettes l'hameçon et ... rien"}, 
+        cactus : { text : "Tu jettes l'hameçon et ... rien"}, 
+        zombie : { text : "Tu jettes l'hameçon et tu l'énerves encore plus..."}, 
+        yéti : { text : "Tu jettes l'hameçon et tu l'énerves encore plus..."}
       }
     }
   },
@@ -443,16 +447,16 @@ const objectInfo = {
       }
     },
     français : {
-      récupérer : {text : ""},
+      récupérer : {text : "Tu attrapes un poisson"},
       utiliser : {
-        ours : { text : ""}, 
-        fennec : { text : "" }, 
-        troll : { text : ""}, 
-        piranha : { text : ""} , 
-        fantôme : { text : ""}, 
-        cactus : { text : ""}, 
-        zombie : { text : ""}, 
-        yéti : { text : ""}
+        ours : { text : "Tu jettes le poisson et l'ours le trouve plus intéressant que toi"}, 
+        fennec : { text : "Tu jettes le poisson et le fennec le trouve plus intéressant que toi" }, 
+        troll : { text : "Tu jettes le poisson et tu l'énerves encore plus..."}, 
+        piranha : { text : "Tu jettes le poisson et tu l'énerves encore plus..."} , 
+        fantôme : { text : "Tu jettes le poisson et ... rien"}, 
+        cactus : { text : "Tu jettes le poisson et ... rien"}, 
+        zombie : { text : "Tu jettes l'hameçon et tu fais juste l'énerver plus..."}, 
+        yéti : { text : "Tu jettes le poisson et le yéti le trouve plus intéressant que toi"}
       }
     }
   }, huile : 
@@ -466,21 +470,21 @@ const objectInfo = {
         piranha : { text : "Tu garroches l'huile et il ne voit plus rien"} , 
         fantôme : { text : "Tu garroches l'huile et ... rien"}, 
         cactus : { text : "Tu garroches l'huile et ... rien"}, 
-        zombie : { text : "Tu garroches l'huile et il glisssseee pas mal plus loin"}, 
-        yéti : { text : "Tu garroches l'hameçon et tu fais juste l'énerver plus..."}
+        zombie : { text : "Tu garroches l'huile et il glisssseee vers l'infini et plus loin encore"}, 
+        yéti : { text : "Tu garroches l'huile et tu fais juste l'énerver plus..."}
       }
     },
     français : {
-      récupérer : {text : ""},
+      récupérer : {text : "Tu prends une flasque d'huile"},
       utiliser : {
-        ours : { text : ""}, 
-        fennec : { text : "" }, 
-        troll : { text : ""}, 
-        piranha : { text : ""} , 
-        fantôme : { text : ""}, 
-        cactus : { text : ""}, 
-        zombie : { text : ""}, 
-        yéti : { text : ""}
+        ours : { text : "Tu fais couler l'huile et tu l'énerve encore plus..."}, 
+        fennec : { text : "Tu fais couler l'huile et tu le fais glisser" }, 
+        troll : { text : "Tu fais couler l'huile et tu l'énerve encore plus..."}, 
+        piranha : { text : "Tu fais couler l'huile et il ne voit plus rien"} , 
+        fantôme : { text : "Tu fais couler l'huile et ... rien"}, 
+        cactus : { text : "Tu fais couler l'huile et ... rien"}, 
+        zombie : { text : "Tu fais couler l'huile et il glisssseee vers l'infini et au-delà"}, 
+        yéti : { text : "Tu fais couler l'huile et tu l'énerve encore plus..."}
       }
     }
   }, lampe :
@@ -493,22 +497,22 @@ const objectInfo = {
         troll : { text : "T'éclaires l'troll et tu fais juste l'énerver plus..."}, 
         piranha : { text : "T'éclaires l'piranha et tu fais juste l'énerver plus..."} , 
         fantôme : { text : "T'éclaires l'fantôme et il s'enfuit"}, 
-        cactus : { text : "T'éclaires l'fantôme et il s'enfuit!!!(Ah ouin?)"}, 
-        zombie : { text : "T'éclaires l'fantôme et il s'enfuit"}, 
-        yéti : { text : "T'éclaires l'fennec et tu fais juste l'énerver plus..."}
+        cactus : { text : "T'éclaires l'cactus et il s'enfuit!!!(Ah ouin?)"}, 
+        zombie : { text : "T'éclaires l'zombie et il s'enfuit"}, 
+        yéti : { text : "T'éclaires l'yeti et tu fais juste l'énerver plus..."}
       }
     },
     français : {
-      récupérer : {text : ""},
+      récupérer : {text : "Tu prends une lampe"},
       utiliser : {
-        ours : { text : ""}, 
-        fennec : { text : "" }, 
-        troll : { text : ""}, 
-        piranha : { text : ""} , 
-        fantôme : { text : ""}, 
-        cactus : { text : ""}, 
-        zombie : { text : ""}, 
-        yéti : { text : ""}
+        ours : { text : "Tu éclaires l'ours et tu l'énerves encore plus..."}, 
+        fennec : { text : "Tu éclaires le fennec et tu l'énerves encore plus..." }, 
+        troll : { text : "Tu éclaires le troll et tu l'énerves encore plus..."}, 
+        piranha : { text : "Tu éclaires le piranha et tu l'énerves encore plus..."} , 
+        fantôme : { text : "Tu éclaires le fantôme et il s'enfuit"}, 
+        cactus : { text : "Tu éclaires le cactus et il s'enfuit!!!(Genre ?)"}, 
+        zombie : { text : "Tu éclaires le zombie et il s'enfuit"}, 
+        yéti : { text : "Tu éclaires le yéti et tu l'énerves encore plus..."}
       }
     }
   }, pelle : 
@@ -519,24 +523,24 @@ const objectInfo = {
         ours : { text : "T'assomes l'ours avec un coup de pelle en pleine face"}, 
         fennec : { text : "Le fennec esquive pis te mord" }, 
         troll : { text : "T'assomes l'troll avec un coup de pelle en pleine face"}, 
-        piranha : { text : "Tu tombes à l'eau avec la pelle et le l'piranha t'mange"} , 
+        piranha : { text : "Tu tombes à l'eau avec la pelle et l'piranha t'mange"} , 
         fantôme : { text : "T'assomes l'fantôme et ... rien"}, 
-        cactus : { text : "T'assomes l'fantôme et ... rien"}, 
+        cactus : { text : "T'assomes l'cactus et ... rien"}, 
         zombie : { text : "T'assomes l'zombie avec un coup de pelle en pleine face"}, 
         yéti : { text : "T'assomes l'yéti avec un coup de pelle en pleine face"}
       }
     },
     français : {
-      récupérer : {text : ""},
+      récupérer : {text : "Tu ramasses une pelle"},
       utiliser : {
-        ours : { text : ""}, 
-        fennec : { text : "" }, 
-        troll : { text : ""}, 
-        piranha : { text : ""} , 
-        fantôme : { text : ""}, 
-        cactus : { text : ""}, 
-        zombie : { text : ""}, 
-        yéti : { text : ""}
+        ours : { text : "Tu assomes l'ours avec un coup de pelle en plein visage"}, 
+        fennec : { text : "Le fennec esquive et te mord" }, 
+        troll : { text : "Tu assomes le troll avec un coup de pelle en plein visage"}, 
+        piranha : { text : "Tu tombes à l'eau avec la pelle et le piranha te grignotte"} , 
+        fantôme : { text : "Tu assomes le fantôme et ... rien"}, 
+        cactus : { text : "Tu assomes le cactus et ... rien"}, 
+        zombie : { text : "Tu assomes le zombie avec un coup de pelle en plein visage"}, 
+        yéti : { text : "Tu assomes le yéti avec un coup de pelle en plein visage"}
       }
     }
   }, VIPI : 
@@ -555,16 +559,16 @@ const objectInfo = {
       }
     },
     français : {
-      récupérer : {text : ""},
+      récupérer : {text : "VIPI vient t'aider"},
       utiliser : {
-        ours : { text : ""}, 
-        fennec : { text : "" }, 
-        troll : { text : ""}, 
-        piranha : { text : ""} , 
-        fantôme : { text : ""}, 
-        cactus : { text : ""}, 
-        zombie : { text : ""}, 
-        yéti : { text : ""}
+        ours : { text : "VIPI se débarasse de l'ours"}, 
+        fennec : { text : "VIPI se débarasse du fennec"}, 
+        troll : { text : "VIPI se débarasse du troll"}, 
+        piranha : { text : "VIPI se débarasse du piranha"} , 
+        fantôme : { text : "VIPI se débarasse du fantôme"}, 
+        cactus : { text : "VIPI se débarasse de cactus"}, 
+        zombie : { text : "VIPI se débarasse de zombie"}, 
+        yéti : { text : "VIPI se débarasse du yéti"}
       }
     }
   },
@@ -584,6 +588,7 @@ const monsterAtLocationList = {
 }
 
 export default{
+  actionTextList,
   areaList,
   monsterList,
   objectList,

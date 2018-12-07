@@ -60,6 +60,7 @@
 }
 
 .tooltip .tooltiptext {
+    position: relative;
     visibility: hidden;
     width: 250px;
     background-color: #eeeeee;
