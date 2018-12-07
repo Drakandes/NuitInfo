@@ -12,6 +12,7 @@ export class PathExplorationService {
 
   public pathOptions = []
   public pathOptionsInfo = []
+  public currentLocation = 'forêt'
 
   constructor(private stat: PlayerStatService) { }
 
@@ -57,6 +58,21 @@ export class PathExplorationService {
 
   public explorePathOption(pathOptionIndex) {
     const info = this.pathOptionsInfo[pathOptionIndex]
+    const listString = []
+    listString.push(info[this.stat.language].arrivee.text)
+    listString.push(`Tu as pris ${info.healthMinus} point(s) de dégât!`)
+    listString.push(`Tu es ${info.sleepMinus}% plus fatigué!`)
+    listString.push(`Ta faim a augmenté de ${info.hungerMinus}%!`)
+    this.stat.hungerMinus(info.hungerMinus)
+    this.stat.sleepMinus(info.sleepMinus)
+    this.stat.healthMinus(info.healthMinus)
+    listString.push(`À toi de choisir ce que tu vas faire maintenant comme action!`)
+    this.currentLocation = this.pathOptions[pathOptionIndex]
+    return listString
+  }
+
+  public doAction(actionType){
+    const info = this.explorationData.actionTextList[this.stat.language][actionType][this.currentLocation].text
     const listString = []
     listString.push(info[this.stat.language].arrivee.text)
     listString.push(`Tu as pris ${info.healthMinus} point(s) de dégât!`)

@@ -37,6 +37,12 @@ export class HomePageComponent implements OnInit {
     this.path.updatePathOptions()
   }
 
+  private doAction(actionType){
+    this.show = true
+    this.fadeIn = true
+    this.actionResults = this.path.doAction(actionType)
+  }
+
   private onModalClose(){
     this.fadeIn = false
     setTimeout(() => {
