@@ -329,7 +329,11 @@ const locationInfo = {
     },
     français : {
       arrivee : {text : "Tu arrives au ruisseau"}
-    }
+    },
+    chanceSleeping : 70,
+    chanceEating : 40,
+    chanceFinding : 100,
+    chanceRunning : 85,
   },
   marécage : {
     monsterList : ["fantôme","zombie",],

@@ -136,8 +136,8 @@ export class PathExplorationService {
     const listString = []
     const random = (Math.random() * (100 - 0)) + 0
     const reussite = random <= actionChance
-    listString.push(info[this.currentLocation].text)
     if(actionType !== 'fuir'){
+      listString.push(info[this.currentLocation].text)
       if(reussite){
         if (this.stat.language === "français"){
           listString.push(`Tu as regagné ${30}% de ${actionString}!`)
