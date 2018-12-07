@@ -25,6 +25,11 @@ export class HomePageComponent implements OnInit {
     return this.path.pathOptionsInfo[pathOptionIndex].backgroundColor
   }
 
+  private getPathOptionImage(pathOptionIndex){
+    const name = this.path.pathOptionsInfo[pathOptionIndex].background
+    return "url(bg-img/" + name + ")"
+  }
+
   private getPathOptionName(pathOptionIndex){
     return this.path.pathOptionsInfo[pathOptionIndex].backgroundColor
   }
