@@ -56,6 +56,6 @@ export class PathExplorationService {
   }
 
   public explorePathOption(pathOptionIndex) {
-    
+    const info = this.pathOptionsInfo[pathOptionIndex]
   }
 }
