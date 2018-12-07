@@ -87,15 +87,43 @@ export class PathExplorationService {
 
   public doAction(actionType){
     const info = this.explorationData.actionTextList[this.stat.language][actionType]
+    let actionChance = 0
+    let actionString = ""
+    if(actionType === 'dormir') actionChance = this.explorationData.locationInfo[this.currentLocation].chanceSleeping
+    if(actionType === 'manger') actionChance = this.explorationData.locationInfo[this.currentLocation].chanceEating
+    if(actionType === 'explorer') actionChance = this.explorationData.locationInfo[this.currentLocation].chanceFinding
+    if(actionType === 'fuir') actionChance = this.explorationData.locationInfo[this.currentLocation].chanceRunning
+
+    if(actionType === 'dormir') actionString = "sommeil"
+    if(actionType === 'manger') actionString = "faim"
+    if(actionType === 'explorer') actionString = ""
+    if(actionType === 'fuir') actionString = ""
+
     const listString = []
-    const reussite = 
+    const random = (Math.random() * (100 - 0)) + 0
+    console.log(random);
+    console.log(actionChance);
+    const reussite = random <= actionChance
     listString.push(info[this.currentLocation].text)
-    listString.push(`Tu as pris ${info.healthMinus} point(s) de dégât!`)
-    listString.push(`Tu es ${info.sleepMinus}% plus fatigué!`)
-    listString.push(`Ta faim a augmenté de ${info.hungerMinus}%!`)
-    this.stat.hungerMinus(info.hungerMinus)
-    this.stat.sleepMinus(info.sleepMinus)
-    this.stat.healthMinus(info.healthMinus)
+    if(reussite){
+      if (this.stat.language === "français"){
+        listString.push(`Tu as regagné ${30}% de ${actionString}!`)
+        listString.push(`Tu as regagné ${30}% de ${actionString}!`)
+      }else{
+        listString.push(`T'as récupéré ${5}% de vie!`)
+        listString.push(`T'as récupéré ${5}% de vie!`)
+      }
+
+      if(actionType === 'dormir') this.stat.sleepBonus(30)
+      if(actionType === 'manger') this.stat.hungerBonus(30)
+      this.stat.healthBonus(5)
+    } else{
+      if (this.stat.language === "français"){
+        listString.push(`Tu n'as rien regagné en ${actionString}!`)
+      }else{
+        listString.push(`T'as récupéré en ${actionString}!`)
+      }
+    }
     listString.push(`À toi de choisir ce que tu vas faire maintenant comme action!`)
     return listString
   }
