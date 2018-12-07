@@ -2,6 +2,7 @@
 
 <div class="home-page-box flexbox-column-spc-evenly">
   <app-gauge></app-gauge>
+  <app-monster></app-monster>
   <!-- Section du haut -->
   <div class="middle-item path-sections flexbox-row-spc-evenly">
     <div class="top-section flexbox-column-spc-evenly" [style.background-color]="getPathOptionColor(0)">
@@ -32,7 +33,7 @@
   <!-- Section du bas -->
   <div class="middle-item action-sections flexbox-row-spc-evenly">
     <div class="center-item bottom-section flexbox-row-spc-evenly" *ngFor="let action of path.explorationData.actionList; let actionIndex = index">
-      <div class="action-box center-item tooltip flexbox-row-spc-evenly" (click)="doAction(action)">
+      <div class="action-box center-item tooltip flexbox-row-spc-evenly" (click)="doAction(action)" *ngIf="getActionValid(action)">
         {{action[0].toUpperCase() + action.slice(1)}}
         <div class="tooltiptext">
           {{path.explorationData.actionTextList[stat.language][action].tooltiptext}}

@@ -14,6 +14,10 @@ export class PathExplorationService {
   public pathOptionsInfo = []
   public currentLocation = 'forêt'
 
+  public hasMonster = false
+  public monsterName = ''
+  public monsterInfo: any = {}
+
   constructor(private stat: PlayerStatService) { }
 
   public initExplorationService(){
@@ -68,6 +72,17 @@ export class PathExplorationService {
       this.stat.hungerMinus(info.hungerMinus)
       this.stat.sleepMinus(info.sleepMinus)
       this.stat.healthMinus(info.healthMinus)
+      if(!this.hasMonster) {
+        const random = (Math.random() * (100 - 0)) + 0
+        if(random <= info.chanceMonster){
+          this.hasMonster = true
+          const randomMonster = info.monsterList[Math.floor(Math.random()*info.monsterList.length)];
+          this.monsterName = randomMonster
+          console.log(this.explorationData);
+          this.monsterInfo = this.explorationData.monsterTextList[this.stat.language][randomMonster]
+          listString.push(this.monsterInfo.arrivee.text)
+        }
+      }
       listString.push(`À toi de choisir ce que tu vas faire maintenant comme action!`)
     }
     else
@@ -79,6 +94,25 @@ export class PathExplorationService {
       this.stat.hungerMinus(info.hungerMinus)
       this.stat.sleepMinus(info.sleepMinus)
       this.stat.healthMinus(info.healthMinus)
+      if(!this.hasMonster) {
+        const random = (Math.random() * (100 - 0)) + 0
+        if(random <= info.chanceMonster){
+          this.hasMonster = true
+          const randomMonster = info.monsterList[Math.floor(Math.random()*info.monsterList.length)];
+          this.monsterName = randomMonster
+          console.log(this.explorationData);
+          this.monsterInfo = this.explorationData.monsterTextList[this.stat.language][randomMonster]
+          listString.push(this.monsterInfo.arrivee.text)
+        }
+      }else{
+        const random = (Math.random() * (100 - 0)) + 0
+        if(random <= 50){
+          this.hasMonster = false
+          listString.push(this.explorationData.monsterTextList[this.stat.language][this.monsterName].fuite.text)
+        }else{
+          listString.push(this.explorationData.monsterTextList[this.stat.language][this.monsterName].suivi.text)
+        }
+      }
       listString.push(`Maintenant aweille, choisi c'que tu vas faire!`)
     }
     this.currentLocation = this.pathOptions[pathOptionIndex]
@@ -96,32 +130,54 @@ export class PathExplorationService {
 
     if(actionType === 'dormir') actionString = "sommeil"
     if(actionType === 'manger') actionString = "faim"
-    if(actionType === 'explorer') actionString = ""
-    if(actionType === 'fuir') actionString = ""
+    if(actionType === 'explorer') actionString = "meh"
+    if(actionType === 'fuir') actionString = "uh"
 
     const listString = []
     const random = (Math.random() * (100 - 0)) + 0
-    console.log(random);
-    console.log(actionChance);
     const reussite = random <= actionChance
     listString.push(info[this.currentLocation].text)
-    if(reussite){
-      if (this.stat.language === "français"){
-        listString.push(`Tu as regagné ${30}% de ${actionString}!`)
-        listString.push(`Tu as regagné ${30}% de ${actionString}!`)
-      }else{
-        listString.push(`T'as récupéré ${5}% de vie!`)
-        listString.push(`T'as récupéré ${5}% de vie!`)
-      }
+    if(actionType !== 'fuir'){
+      if(reussite){
+        if (this.stat.language === "français"){
+          listString.push(`Tu as regagné ${30}% de ${actionString}!`)
+          listString.push(`Tu as regagné ${5}% de vie!`)
+        }else{
+          listString.push(`T'as récupéré ${30}% de ${actionString}!`)
+          listString.push(`T'as récupéré ${5}% de vie!`)
+        }
 
-      if(actionType === 'dormir') this.stat.sleepBonus(30)
-      if(actionType === 'manger') this.stat.hungerBonus(30)
-      this.stat.healthBonus(5)
+        if(actionType === 'dormir') this.stat.sleepBonus(30)
+        if(actionType === 'manger') this.stat.hungerBonus(30)
+        this.stat.healthBonus(5)
+      } else{
+        if (this.stat.language === "français"){
+          listString.push(`Tu n'as rien regagné en ${actionString}!`)
+          listString.push(`Tu as pris ${10} point(s) de dégât!`)
+        }else{
+          listString.push(`T'as rien récupéré en ${actionString}!`)
+          listString.push(`T'as pris ${10} point(s) de dégât!`)
+        }
+        this.stat.healthMinus(10)
+      }
     } else{
-      if (this.stat.language === "français"){
-        listString.push(`Tu n'as rien regagné en ${actionString}!`)
-      }else{
-        listString.push(`T'as récupéré en ${actionString}!`)
+      if(reussite){
+        if (this.stat.language === "français"){
+          listString.push(`Tu as regagné ${5}% de vie!`)
+        }else{
+          listString.push(`T'as récupéré ${5}% de vie!`)
+        }
+        this.hasMonster = false
+        listString.push(this.explorationData.monsterTextList[this.stat.language][this.monsterName].fuite.text)
+        this.stat.healthBonus(5)
+      } else{
+        if (this.stat.language === "français"){
+          listString.push(`Tu as pris ${15} point(s) de dégât!`)
+        }else{
+          listString.push(`T'as pris ${15} point(s) de dégât!`)
+        }
+        listString.push(this.explorationData.monsterTextList[this.stat.language][this.monsterName].attaque.text)
+        this.stat.healthMinus(15)
       }
     }
     listString.push(`À toi de choisir ce que tu vas faire maintenant comme action!`)
